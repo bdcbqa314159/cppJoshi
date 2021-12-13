@@ -174,6 +174,30 @@ cppJoshi/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/build
 .PHONY : cppJoshi/fast
 
+src/payoff.o: src/payoff.cpp.o
+.PHONY : src/payoff.o
+
+# target to build an object file
+src/payoff.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/payoff.cpp.o
+.PHONY : src/payoff.cpp.o
+
+src/payoff.i: src/payoff.cpp.i
+.PHONY : src/payoff.i
+
+# target to preprocess a source file
+src/payoff.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/payoff.cpp.i
+.PHONY : src/payoff.cpp.i
+
+src/payoff.s: src/payoff.cpp.s
+.PHONY : src/payoff.s
+
+# target to generate assembly for a file
+src/payoff.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/payoff.cpp.s
+.PHONY : src/payoff.cpp.s
+
 src/random.o: src/random.cpp.o
 .PHONY : src/random.o
 
@@ -235,6 +259,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... cppJoshi"
+	@echo "... src/payoff.o"
+	@echo "... src/payoff.i"
+	@echo "... src/payoff.s"
 	@echo "... src/random.o"
 	@echo "... src/random.i"
 	@echo "... src/random.s"

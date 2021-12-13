@@ -3,5 +3,6 @@
 
 #include "cppJoshi_bits/random.hpp"
 #include "cppJoshi_bits/simpleMC.hpp"
+#include "cppJoshi_bits/payoff.hpp"
 
 #endif

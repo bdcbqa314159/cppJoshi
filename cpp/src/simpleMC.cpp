@@ -90,3 +90,31 @@ double simpleMonteCarloDD(double expiry, double strike1, double strike2, double 
 
     return mean;
 }
+
+double simpleMonteCarlo2(const Payoff1 &thePayoff, double expiry, double spot, double vol, double r, unsigned long numberOfPaths)
+{
+
+    double variance = vol * vol * expiry;
+    double rootVariance = sqrt(variance);
+    double itoCorrection = -0.5 * variance;
+
+    double movedSpot = spot * exp(r * expiry + itoCorrection);
+
+    double thisSpot(0);
+    double runningSum(0);
+
+    for (unsigned long i = 0; i < numberOfPaths; i++)
+    {
+        double thisGaussian = getOneGaussianByBoxMuller();
+        thisSpot = movedSpot * exp(rootVariance * thisGaussian);
+        double thisPayoff = thePayoff(thisSpot);
+
+        thisPayoff = thisPayoff > 0 ? thisPayoff : 0.;
+        runningSum += thisPayoff;
+    }
+
+    double mean = runningSum / numberOfPaths;
+    mean *= exp(-r * expiry);
+
+    return mean;
+}

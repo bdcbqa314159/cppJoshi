@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/cppJoshi.dir/src/payoff.cpp.o"
+  "CMakeFiles/cppJoshi.dir/src/payoff.cpp.o.d"
   "CMakeFiles/cppJoshi.dir/src/random.cpp.o"
   "CMakeFiles/cppJoshi.dir/src/random.cpp.o.d"
   "CMakeFiles/cppJoshi.dir/src/simpleMC.cpp.o"
