@@ -27,4 +27,30 @@ private:
     optionType theOptionType;
 };
 
+class Payoff2
+{
+public:
+    Payoff2(){};
+    virtual double operator()(double spot) const = 0;
+    virtual ~Payoff2(){};
+
+private:
+};
+
+class PayoffCall2 : public Payoff2
+{
+public:
+    PayoffCall2(double strike);
+    virtual double operator()(double spot) const;
+    virtual ~PayoffCall2() {}
+};
+
+class PayoffPut2 : public Payoff2
+{
+public:
+    PayoffPut2(double strike);
+    virtual double operator()(double spot) const;
+    virtual ~PayoffPut2() {}
+};
+
 #endif
