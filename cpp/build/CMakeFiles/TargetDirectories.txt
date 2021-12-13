@@ -1,0 +1,7 @@
+/Users/bernardocohen/repos/cppJoshi/cpp/build/CMakeFiles/cppJoshi.dir
+/Users/bernardocohen/repos/cppJoshi/cpp/build/CMakeFiles/edit_cache.dir
+/Users/bernardocohen/repos/cppJoshi/cpp/build/CMakeFiles/rebuild_cache.dir
+/Users/bernardocohen/repos/cppJoshi/cpp/build/CMakeFiles/list_install_components.dir
+/Users/bernardocohen/repos/cppJoshi/cpp/build/CMakeFiles/install.dir
+/Users/bernardocohen/repos/cppJoshi/cpp/build/CMakeFiles/install/local.dir
+/Users/bernardocohen/repos/cppJoshi/cpp/build/CMakeFiles/install/strip.dir

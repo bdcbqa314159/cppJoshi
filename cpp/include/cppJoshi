@@ -1,0 +1,7 @@
+#ifndef CPPJOSHI_H
+#define CPPJOSHI_H
+
+#include "cppJoshi_bits/random.hpp"
+#include "cppJoshi_bits/simpleMC.hpp"
+
+#endif
