@@ -1,6 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/cppJoshi.dir/src/doubleDigital.cpp.o"
+  "CMakeFiles/cppJoshi.dir/src/doubleDigital.cpp.o.d"
   "CMakeFiles/cppJoshi.dir/src/payoff.cpp.o"
   "CMakeFiles/cppJoshi.dir/src/payoff.cpp.o.d"
+  "CMakeFiles/cppJoshi.dir/src/powerOptions.cpp.o"
+  "CMakeFiles/cppJoshi.dir/src/powerOptions.cpp.o.d"
   "CMakeFiles/cppJoshi.dir/src/random.cpp.o"
   "CMakeFiles/cppJoshi.dir/src/random.cpp.o.d"
   "CMakeFiles/cppJoshi.dir/src/simpleMC.cpp.o"

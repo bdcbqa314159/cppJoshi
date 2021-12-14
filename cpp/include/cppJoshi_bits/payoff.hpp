@@ -43,6 +43,9 @@ public:
     PayoffCall2(double strike);
     virtual double operator()(double spot) const;
     virtual ~PayoffCall2() {}
+
+private:
+    double strike;
 };
 
 class PayoffPut2 : public Payoff2
@@ -51,6 +54,9 @@ public:
     PayoffPut2(double strike);
     virtual double operator()(double spot) const;
     virtual ~PayoffPut2() {}
+
+private:
+    double strike;
 };
 
 #endif

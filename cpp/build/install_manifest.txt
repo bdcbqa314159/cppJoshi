@@ -1,6 +1,8 @@
 /usr/local/lib/libcppJoshi.dylib
 /usr/local/include/cppJoshi
 /usr/local/include/cppJoshi_bits/.DS_Store
+/usr/local/include/cppJoshi_bits/doubleDigital.hpp
 /usr/local/include/cppJoshi_bits/payoff.hpp
 /usr/local/include/cppJoshi_bits/random.hpp
+/usr/local/include/cppJoshi_bits/powerOptions.hpp
 /usr/local/include/cppJoshi_bits/simpleMC.hpp

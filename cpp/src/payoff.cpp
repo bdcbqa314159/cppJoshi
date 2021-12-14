@@ -34,30 +34,21 @@ double Payoff1::operator()(double spot) const
     }
 }
 
-// class Payoff2
-// {
-// public:
-//     Payoff2(){};
-//     virtual double operator()(double spot) const = 0;
-//     virtual ~Payoff2(){};
+PayoffCall2::PayoffCall2(double strike) : strike(strike)
+{
+}
 
-// private:
-// };
+double PayoffCall2::operator()(double spot) const
+{
+    return std::max(spot - strike, 0.);
+}
 
-// PayoffCall2::PayoffCall2(dou)
+PayoffPut2::PayoffPut2(double strike) : strike(strike)
+{
+}
 
-// class PayoffCall2 : public Payoff2
-// {
-// public:
-//     PayoffCall2(double strike);
-//     virtual double operator()(double spot) const;
-//     virtual ~PayoffCall2() {}
-// };
+double PayoffPut2::operator()(double spot) const
+{
 
-// class PayoffPut2 : public Payoff2
-// {
-// public:
-//     PayoffPut2(double strike);
-//     virtual double operator()(double spot) const;
-//     virtual ~PayoffPut2() {}
-// };
+    return std::max(strike - spot, 0.);
+}

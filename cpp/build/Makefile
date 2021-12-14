@@ -174,6 +174,30 @@ cppJoshi/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/build
 .PHONY : cppJoshi/fast
 
+src/doubleDigital.o: src/doubleDigital.cpp.o
+.PHONY : src/doubleDigital.o
+
+# target to build an object file
+src/doubleDigital.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/doubleDigital.cpp.o
+.PHONY : src/doubleDigital.cpp.o
+
+src/doubleDigital.i: src/doubleDigital.cpp.i
+.PHONY : src/doubleDigital.i
+
+# target to preprocess a source file
+src/doubleDigital.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/doubleDigital.cpp.i
+.PHONY : src/doubleDigital.cpp.i
+
+src/doubleDigital.s: src/doubleDigital.cpp.s
+.PHONY : src/doubleDigital.s
+
+# target to generate assembly for a file
+src/doubleDigital.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/doubleDigital.cpp.s
+.PHONY : src/doubleDigital.cpp.s
+
 src/payoff.o: src/payoff.cpp.o
 .PHONY : src/payoff.o
 
@@ -197,6 +221,30 @@ src/payoff.s: src/payoff.cpp.s
 src/payoff.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/payoff.cpp.s
 .PHONY : src/payoff.cpp.s
+
+src/powerOptions.o: src/powerOptions.cpp.o
+.PHONY : src/powerOptions.o
+
+# target to build an object file
+src/powerOptions.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/powerOptions.cpp.o
+.PHONY : src/powerOptions.cpp.o
+
+src/powerOptions.i: src/powerOptions.cpp.i
+.PHONY : src/powerOptions.i
+
+# target to preprocess a source file
+src/powerOptions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/powerOptions.cpp.i
+.PHONY : src/powerOptions.cpp.i
+
+src/powerOptions.s: src/powerOptions.cpp.s
+.PHONY : src/powerOptions.s
+
+# target to generate assembly for a file
+src/powerOptions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/powerOptions.cpp.s
+.PHONY : src/powerOptions.cpp.s
 
 src/random.o: src/random.cpp.o
 .PHONY : src/random.o
@@ -259,9 +307,15 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... cppJoshi"
+	@echo "... src/doubleDigital.o"
+	@echo "... src/doubleDigital.i"
+	@echo "... src/doubleDigital.s"
 	@echo "... src/payoff.o"
 	@echo "... src/payoff.i"
 	@echo "... src/payoff.s"
+	@echo "... src/powerOptions.o"
+	@echo "... src/powerOptions.i"
+	@echo "... src/powerOptions.s"
 	@echo "... src/random.o"
 	@echo "... src/random.i"
 	@echo "... src/random.s"

@@ -21,11 +21,15 @@ set(SOURCE_FILES
     ${PROJECT_INCLUDE_DIR}/random.hpp
     ${PROJECT_INCLUDE_DIR}/simpleMC.hpp
     ${PROJECT_INCLUDE_DIR}/payoff.hpp
+    ${PROJECT_INCLUDE_DIR}/doubleDigital.hpp
+    ${PROJECT_INCLUDE_DIR}/powerOptions.hpp
     
 
     ${PROJECT_SOURCE_DIR}/random.cpp
     ${PROJECT_SOURCE_DIR}/simpleMC.cpp
     ${PROJECT_SOURCE_DIR}/payoff.cpp
+    ${PROJECT_SOURCE_DIR}/doubleDigital.cpp
+    ${PROJECT_SOURCE_DIR}/powerOptions.cpp
     
 )
 

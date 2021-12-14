@@ -159,6 +159,193 @@ void exercise7()
     std::cout << "No need to test the speed of the compiler with or without const. I use const with the best practice usage." << std::endl;
 }
 
+void simpleMCMain3()
+{
+    double spot(100.), expiry(1.), r(0.03), vol(0.02), strike(100.);
+    unsigned long N = 30000;
+
+    PayoffCall2 callPayoff(strike);
+    PayoffPut2 putPayoff(130.);
+
+    double resultCall(0), resultPut(0);
+
+    resultCall = simpleMonteCarlo2(callPayoff, expiry, spot, vol, r, N);
+    resultPut = simpleMonteCarlo2(putPayoff, expiry, spot, vol, r, N);
+
+    std::cout << "Price of a call with simple Monte Carlo simulation : " << resultCall << std::endl;
+
+    std::cout << "Price of a put with simple Monte Carlo simulation : " << resultPut << std::endl;
+    return;
+}
+
+void simpleMCMain4()
+{
+    double spot(100.), expiry(1.), r(0.03), vol(0.02), strike(100.);
+    unsigned long N = 30000;
+
+    Payoff2 *thePayoffPtr(0);
+
+    std::cout << "Enter 0 for a call, 1 for a put" << std::endl;
+
+    int ans(0);
+    std::cout << "Enter the option>>";
+    std::cin >> ans;
+
+    if (ans == 0)
+    {
+        thePayoffPtr = new PayoffCall2(strike);
+    }
+
+    else
+    {
+        thePayoffPtr = new PayoffPut2(130.);
+    }
+
+    double result(0);
+    result = simpleMonteCarlo2(*thePayoffPtr, expiry, spot, vol, r, N);
+
+    if (ans == 0)
+    {
+        std::cout << "Price of a call with simple Monte Carlo simulation : " << result << std::endl;
+    }
+
+    else
+    {
+        std::cout << "Price of a put with simple Monte Carlo simulation : " << result << std::endl;
+    }
+    delete thePayoffPtr;
+
+    return;
+}
+
+void simpleMCMain5()
+{
+    double spot(100.), expiry(1.), r(0.03), vol(0.02), strike(140.), strike1(80.);
+    unsigned long N = 30000;
+
+    Payoff2 *thePayoffPtr(0);
+
+    thePayoffPtr = new PayoffDoubleDigital2(strike1, strike);
+
+    double result(0);
+    result = simpleMonteCarlo2(*thePayoffPtr, expiry, spot, vol, r, N);
+
+    std::cout << "Price of a call with simple Monte Carlo simulation : " << result << std::endl;
+
+    delete thePayoffPtr;
+
+    return;
+}
+
+void exercise8()
+{
+    //Exercise 3.1
+    double spot(100.), expiry(1.), r(0.03), vol(0.02), strike(140.), strike1(80.);
+    int power(4);
+    unsigned long N = 30000;
+
+    Payoff2 *thePayoffPtr(0);
+
+    std::cout << "Enter 0 for a power call, 1 for a  power put" << std::endl;
+
+    int ans(0);
+    std::cout << "Enter the option>>";
+    std::cin >> ans;
+
+    if (ans == 0)
+    {
+        thePayoffPtr = new PayoffPowerCall2(strike, power);
+    }
+
+    else
+    {
+        thePayoffPtr = new PayoffPowerPut2(130., power);
+    }
+
+    double result(0);
+    result = simpleMonteCarlo2(*thePayoffPtr, expiry, spot, vol, r, N);
+
+    if (ans == 0)
+    {
+        std::cout << "Price of a power call with simple Monte Carlo simulation : " << result << std::endl;
+    }
+
+    else
+    {
+        std::cout << "Price of a power put with simple Monte Carlo simulation : " << result << std::endl;
+    }
+    delete thePayoffPtr;
+
+    return;
+}
+
+void exercise9()
+{
+    //Exercise 3.2
+    double spot(100.), expiry(1.), r(0.03), vol(0.02), strike(140.), strike1(80.);
+    int power(4);
+    unsigned long N = 30000;
+
+    Payoff2 *thePayoffPtr(0);
+
+    std::cout << "Enter the payoff" << std::endl;
+
+    std::cout << "Enter the option>>";
+    std::string payoff("");
+
+    std::getline(std::cin, payoff);
+
+    if (payoff == "call")
+    {
+        thePayoffPtr = new PayoffCall2(strike);
+    }
+
+    else if (payoff == "put")
+    {
+        thePayoffPtr = new PayoffPut2(strike);
+    }
+
+    else if (payoff == "double digital")
+    {
+        thePayoffPtr = new PayoffDoubleDigital2(strike1, strike);
+    }
+
+    else if (payoff == "power call")
+    {
+        thePayoffPtr = new PayoffPowerCall2(strike, power);
+    }
+
+    else if (payoff == "power put")
+    {
+        thePayoffPtr = new PayoffPowerPut2(strike, power);
+    }
+
+    else
+    {
+        std::cout << "The only payoffs accpeted are:" << std::endl;
+        std::cout << "call\nput\ndouble digital\npower call\npower put." << std::endl;
+        return;
+    }
+
+    double result(0);
+    result = simpleMonteCarlo2(*thePayoffPtr, expiry, spot, vol, r, N);
+
+    std::cout << "Price of the option with pay off: " << payoff << " with simple Monte Carlo simulation : " << result << std::endl;
+
+    delete thePayoffPtr;
+
+    return;
+}
+
+void exercise10()
+{
+    //Exercise 3.3
+    std::cout << "We have inheritance between digitals as payoffs." << std::endl;
+    std::cout << "We have inheritance between all asians put/calls geometric/arithmetic & digitals from asian as exotic." << std::endl;
+    std::cout << "jump diffusion as model pricing" << std::endl;
+    std::cout << "statistics errors from standard errors" << std::endl;
+}
+
 int main()
 {
     // std::cout << "======Chapter 1======" << std::endl;
@@ -168,10 +355,19 @@ int main()
     // exercise3();
     // exercise4();
 
-    std::cout << "======Chapter 2======" << std::endl;
-    simpleMCMain2();
-    exercise5();
-    exercise6();
+    // std::cout << "======Chapter 2======" << std::endl;
+    // simpleMCMain2();
+    // exercise5();
+    // exercise6();
+    // exercise7();
+
+    std::cout << "======Chapter 3======" << std::endl;
+    // simpleMCMain3();
+    // simpleMCMain4();
+    // simpleMCMain5();
+    // exercise8();
+    exercise9();
+    exercise10();
 
     return 0;
 }

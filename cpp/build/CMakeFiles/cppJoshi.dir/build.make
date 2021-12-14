@@ -111,11 +111,41 @@ CMakeFiles/cppJoshi.dir/src/payoff.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cppJoshi.dir/src/payoff.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bernardocohen/repos/cppJoshi/cpp/src/payoff.cpp -o CMakeFiles/cppJoshi.dir/src/payoff.cpp.s
 
+CMakeFiles/cppJoshi.dir/src/doubleDigital.cpp.o: CMakeFiles/cppJoshi.dir/flags.make
+CMakeFiles/cppJoshi.dir/src/doubleDigital.cpp.o: ../src/doubleDigital.cpp
+CMakeFiles/cppJoshi.dir/src/doubleDigital.cpp.o: CMakeFiles/cppJoshi.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bernardocohen/repos/cppJoshi/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cppJoshi.dir/src/doubleDigital.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cppJoshi.dir/src/doubleDigital.cpp.o -MF CMakeFiles/cppJoshi.dir/src/doubleDigital.cpp.o.d -o CMakeFiles/cppJoshi.dir/src/doubleDigital.cpp.o -c /Users/bernardocohen/repos/cppJoshi/cpp/src/doubleDigital.cpp
+
+CMakeFiles/cppJoshi.dir/src/doubleDigital.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cppJoshi.dir/src/doubleDigital.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bernardocohen/repos/cppJoshi/cpp/src/doubleDigital.cpp > CMakeFiles/cppJoshi.dir/src/doubleDigital.cpp.i
+
+CMakeFiles/cppJoshi.dir/src/doubleDigital.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cppJoshi.dir/src/doubleDigital.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bernardocohen/repos/cppJoshi/cpp/src/doubleDigital.cpp -o CMakeFiles/cppJoshi.dir/src/doubleDigital.cpp.s
+
+CMakeFiles/cppJoshi.dir/src/powerOptions.cpp.o: CMakeFiles/cppJoshi.dir/flags.make
+CMakeFiles/cppJoshi.dir/src/powerOptions.cpp.o: ../src/powerOptions.cpp
+CMakeFiles/cppJoshi.dir/src/powerOptions.cpp.o: CMakeFiles/cppJoshi.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bernardocohen/repos/cppJoshi/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cppJoshi.dir/src/powerOptions.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cppJoshi.dir/src/powerOptions.cpp.o -MF CMakeFiles/cppJoshi.dir/src/powerOptions.cpp.o.d -o CMakeFiles/cppJoshi.dir/src/powerOptions.cpp.o -c /Users/bernardocohen/repos/cppJoshi/cpp/src/powerOptions.cpp
+
+CMakeFiles/cppJoshi.dir/src/powerOptions.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cppJoshi.dir/src/powerOptions.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bernardocohen/repos/cppJoshi/cpp/src/powerOptions.cpp > CMakeFiles/cppJoshi.dir/src/powerOptions.cpp.i
+
+CMakeFiles/cppJoshi.dir/src/powerOptions.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cppJoshi.dir/src/powerOptions.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bernardocohen/repos/cppJoshi/cpp/src/powerOptions.cpp -o CMakeFiles/cppJoshi.dir/src/powerOptions.cpp.s
+
 # Object files for target cppJoshi
 cppJoshi_OBJECTS = \
 "CMakeFiles/cppJoshi.dir/src/random.cpp.o" \
 "CMakeFiles/cppJoshi.dir/src/simpleMC.cpp.o" \
-"CMakeFiles/cppJoshi.dir/src/payoff.cpp.o"
+"CMakeFiles/cppJoshi.dir/src/payoff.cpp.o" \
+"CMakeFiles/cppJoshi.dir/src/doubleDigital.cpp.o" \
+"CMakeFiles/cppJoshi.dir/src/powerOptions.cpp.o"
 
 # External object files for target cppJoshi
 cppJoshi_EXTERNAL_OBJECTS =
@@ -123,9 +153,11 @@ cppJoshi_EXTERNAL_OBJECTS =
 libcppJoshi.dylib: CMakeFiles/cppJoshi.dir/src/random.cpp.o
 libcppJoshi.dylib: CMakeFiles/cppJoshi.dir/src/simpleMC.cpp.o
 libcppJoshi.dylib: CMakeFiles/cppJoshi.dir/src/payoff.cpp.o
+libcppJoshi.dylib: CMakeFiles/cppJoshi.dir/src/doubleDigital.cpp.o
+libcppJoshi.dylib: CMakeFiles/cppJoshi.dir/src/powerOptions.cpp.o
 libcppJoshi.dylib: CMakeFiles/cppJoshi.dir/build.make
 libcppJoshi.dylib: CMakeFiles/cppJoshi.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bernardocohen/repos/cppJoshi/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library libcppJoshi.dylib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bernardocohen/repos/cppJoshi/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library libcppJoshi.dylib"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cppJoshi.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

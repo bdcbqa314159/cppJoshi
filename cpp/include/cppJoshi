@@ -4,5 +4,7 @@
 #include "cppJoshi_bits/random.hpp"
 #include "cppJoshi_bits/simpleMC.hpp"
 #include "cppJoshi_bits/payoff.hpp"
+#include "cppJoshi_bits/doubleDigital.hpp"
+#include "cppJoshi_bits/powerOptions.hpp"
 
 #endif
