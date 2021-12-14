@@ -222,6 +222,30 @@ src/payoff.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/payoff.cpp.s
 .PHONY : src/payoff.cpp.s
 
+src/payoffBridge.o: src/payoffBridge.cpp.o
+.PHONY : src/payoffBridge.o
+
+# target to build an object file
+src/payoffBridge.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/payoffBridge.cpp.o
+.PHONY : src/payoffBridge.cpp.o
+
+src/payoffBridge.i: src/payoffBridge.cpp.i
+.PHONY : src/payoffBridge.i
+
+# target to preprocess a source file
+src/payoffBridge.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/payoffBridge.cpp.i
+.PHONY : src/payoffBridge.cpp.i
+
+src/payoffBridge.s: src/payoffBridge.cpp.s
+.PHONY : src/payoffBridge.s
+
+# target to generate assembly for a file
+src/payoffBridge.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/payoffBridge.cpp.s
+.PHONY : src/payoffBridge.cpp.s
+
 src/powerOptions.o: src/powerOptions.cpp.o
 .PHONY : src/powerOptions.o
 
@@ -337,6 +361,9 @@ help:
 	@echo "... src/payoff.o"
 	@echo "... src/payoff.i"
 	@echo "... src/payoff.s"
+	@echo "... src/payoffBridge.o"
+	@echo "... src/payoffBridge.i"
+	@echo "... src/payoffBridge.s"
 	@echo "... src/powerOptions.o"
 	@echo "... src/powerOptions.i"
 	@echo "... src/powerOptions.s"

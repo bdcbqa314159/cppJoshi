@@ -196,3 +196,29 @@ double simpleMonteCarlo3(const VanillaOption2 &theOption, double spot, double vo
 
     return mean;
 }
+
+double simpleMonteCarlo3(const VanillaOption3 &theOption, double spot, double vol, double r, unsigned long numberOfPaths)
+{
+    double expiry = theOption.getExpiry();
+
+    double variance = vol * vol * expiry;
+    double rootVariance = sqrt(variance);
+    double itoCorrection = -0.5 * variance;
+
+    double movedSpot = spot * exp(r * expiry + itoCorrection);
+    double thisSpot(0);
+    double runningSum(0);
+
+    for (unsigned long i = 0; i < numberOfPaths; i++)
+    {
+        double thisGaussian = getOneGaussianByBoxMuller();
+        thisSpot = movedSpot * exp(rootVariance * thisGaussian);
+        double thisPayoff = theOption.optionPayoff(thisSpot);
+        runningSum += thisPayoff;
+    }
+
+    double mean = runningSum / numberOfPaths;
+    mean *= exp(-r * expiry);
+
+    return mean;
+}

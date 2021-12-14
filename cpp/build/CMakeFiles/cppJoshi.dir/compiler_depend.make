@@ -320,6 +320,10 @@ CMakeFiles/cppJoshi.dir/src/payoff.cpp.o: ../src/payoff.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/functional \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/bit
 
+CMakeFiles/cppJoshi.dir/src/payoffBridge.cpp.o: ../src/payoffBridge.cpp \
+  ../include/cppJoshi_bits/payoffBridge.hpp \
+  ../include/cppJoshi_bits/payoff.hpp
+
 CMakeFiles/cppJoshi.dir/src/powerOptions.cpp.o: ../src/powerOptions.cpp \
   ../include/cppJoshi_bits/powerOptions.hpp \
   ../include/cppJoshi_bits/payoff.hpp \
@@ -570,6 +574,7 @@ CMakeFiles/cppJoshi.dir/src/simpleMC.cpp.o: ../src/simpleMC.cpp \
   ../include/cppJoshi_bits/simpleMC.hpp \
   ../include/cppJoshi_bits/payoff.hpp \
   ../include/cppJoshi_bits/vanilla.hpp \
+  ../include/cppJoshi_bits/payoffBridge.hpp \
   ../include/cppJoshi_bits/random.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/cmath \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/__config \
@@ -800,7 +805,8 @@ CMakeFiles/cppJoshi.dir/src/simpleMC.cpp.o: ../src/simpleMC.cpp \
 
 CMakeFiles/cppJoshi.dir/src/vanilla.cpp.o: ../src/vanilla.cpp \
   ../include/cppJoshi_bits/vanilla.hpp \
-  ../include/cppJoshi_bits/payoff.hpp
+  ../include/cppJoshi_bits/payoff.hpp \
+  ../include/cppJoshi_bits/payoffBridge.hpp
 
 
 ../src/vanilla.cpp:
@@ -869,6 +875,8 @@ CMakeFiles/cppJoshi.dir/src/vanilla.cpp.o: ../src/vanilla.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/xlocale/_wctype.h:
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/xlocale/_stdio.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/xlocale/_time.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/xlocale/_ctype.h:
@@ -908,6 +916,16 @@ CMakeFiles/cppJoshi.dir/src/vanilla.cpp.o: ../src/vanilla.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/cmath:
 
 ../include/cppJoshi_bits/powerOptions.hpp:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/sys/_types/_va_list.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/memory:
+
+../include/cppJoshi_bits/payoffBridge.hpp:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/i386/limits.h:
+
+../src/payoffBridge.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/cwchar:
 
@@ -953,8 +971,6 @@ CMakeFiles/cppJoshi.dir/src/vanilla.cpp.o: ../src/vanilla.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/errno.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/xlocale/_stdio.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/sys/appleapiopts.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/errno.h:
@@ -962,8 +978,6 @@ CMakeFiles/cppJoshi.dir/src/vanilla.cpp.o: ../src/vanilla.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/atomic:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/i386/_limits.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/i386/limits.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/machine/limits.h:
 
@@ -1048,10 +1062,6 @@ CMakeFiles/cppJoshi.dir/src/vanilla.cpp.o: ../src/vanilla.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/xlocale/_stdlib.h:
 
 ../src/doubleDigital.cpp:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/sys/_types/_va_list.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/memory:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/stdlib.h:
 

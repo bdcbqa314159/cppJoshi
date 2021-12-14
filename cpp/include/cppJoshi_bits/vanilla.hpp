@@ -2,6 +2,7 @@
 #define VANILLA_H
 
 #include "payoff.hpp"
+#include "payoffBridge.hpp"
 
 class VanillaOption1
 {
@@ -31,6 +32,19 @@ public:
 private:
     double expiry;
     Payoff3 *thePayoffPtr;
+};
+
+class VanillaOption3
+{
+
+public:
+    VanillaOption3(const PayoffBridge &thePayoff, double expiry);
+    double optionPayoff(double spot) const;
+    double getExpiry() const;
+
+private:
+    double expiry;
+    PayoffBridge thePayoff;
 };
 
 #endif

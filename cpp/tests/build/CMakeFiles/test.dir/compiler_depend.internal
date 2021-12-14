@@ -8,6 +8,7 @@ CMakeFiles/test.dir/src/test.cpp.o
  /usr/local/include/cppJoshi_bits/simpleMC.hpp
  /usr/local/include/cppJoshi_bits/payoff.hpp
  /usr/local/include/cppJoshi_bits/vanilla.hpp
+ /usr/local/include/cppJoshi_bits/payoffBridge.hpp
  /usr/local/include/cppJoshi_bits/doubleDigital.hpp
  /usr/local/include/cppJoshi_bits/powerOptions.hpp
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/iostream

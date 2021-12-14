@@ -394,6 +394,36 @@ void vanillaMain2()
     return;
 }
 
+void vanillaMain3()
+{
+    double spot(100.), expiry(1.), r(0.03), vol(0.02), strike(140.);
+    unsigned long N = 30000;
+
+    double result(0);
+
+    PayoffCall3 thePayoff(strike);
+    VanillaOption3 theOption(thePayoff, expiry);
+
+    double resultCall(0), resultPut(0);
+
+    resultCall = simpleMonteCarlo3(theOption, spot, vol, r, N);
+
+    std::cout << "Price of a call with simple Monte Carlo simulation : " << resultCall << std::endl;
+
+    VanillaOption3 secondOption(theOption);
+
+    resultCall = simpleMonteCarlo3(secondOption, spot, vol, r, N);
+
+    std::cout << "Price of another call with simple Monte Carlo simulation : " << resultCall << std::endl;
+
+    PayoffPut3 otherPayoff(strike);
+    VanillaOption3 otherOption(otherPayoff, expiry);
+    resultPut = simpleMonteCarlo3(otherOption, spot, vol, r, N);
+
+    std::cout << "Price of a put with simple Monte Carlo simulation : " << resultPut << std::endl;
+    return;
+}
+
 int main()
 {
     // std::cout << "======Chapter 1======" << std::endl;
@@ -418,8 +448,9 @@ int main()
     // exercise10();
 
     std::cout << "======Chapter 4======" << std::endl;
-    vanillaMain1();
-    vanillaMain2();
+    // vanillaMain1();
+    // vanillaMain2();
+    vanillaMain3();
 
     return 0;
 }

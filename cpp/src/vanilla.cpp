@@ -52,3 +52,17 @@ VanillaOption2::~VanillaOption2()
 {
     delete thePayoffPtr;
 }
+
+VanillaOption3::VanillaOption3(const PayoffBridge &thePayoff, double expiry) : thePayoff(thePayoff), expiry(expiry)
+{
+}
+
+double VanillaOption3::getExpiry() const
+{
+    return expiry;
+}
+
+double VanillaOption3::optionPayoff(double spot) const
+{
+    return thePayoff(spot);
+}
