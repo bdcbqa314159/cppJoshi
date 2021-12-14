@@ -108,8 +108,6 @@ double simpleMonteCarlo2(const Payoff1 &thePayoff, double expiry, double spot, d
         double thisGaussian = getOneGaussianByBoxMuller();
         thisSpot = movedSpot * exp(rootVariance * thisGaussian);
         double thisPayoff = thePayoff(thisSpot);
-
-        thisPayoff = thisPayoff > 0 ? thisPayoff : 0.;
         runningSum += thisPayoff;
     }
 
@@ -136,8 +134,34 @@ double simpleMonteCarlo2(const Payoff2 &thePayoff, double expiry, double spot, d
         double thisGaussian = getOneGaussianByBoxMuller();
         thisSpot = movedSpot * exp(rootVariance * thisGaussian);
         double thisPayoff = thePayoff(thisSpot);
+        runningSum += thisPayoff;
+    }
 
-        thisPayoff = thisPayoff > 0 ? thisPayoff : 0.;
+    double mean = runningSum / numberOfPaths;
+    mean *= exp(-r * expiry);
+
+    return mean;
+}
+
+double simpleMonteCarlo3(const VanillaOption1 &theOption, double spot, double vol, double r, unsigned long numberOfPaths)
+{
+
+    double expiry = theOption.getExpiry();
+
+    double variance = vol * vol * expiry;
+    double rootVariance = sqrt(variance);
+    double itoCorrection = -0.5 * variance;
+
+    double movedSpot = spot * exp(r * expiry + itoCorrection);
+
+    double thisSpot(0);
+    double runningSum(0);
+
+    for (unsigned long i = 0; i < numberOfPaths; i++)
+    {
+        double thisGaussian = getOneGaussianByBoxMuller();
+        thisSpot = movedSpot * exp(rootVariance * thisGaussian);
+        double thisPayoff = theOption.OptionPayoff(thisSpot);
         runningSum += thisPayoff;
     }
 

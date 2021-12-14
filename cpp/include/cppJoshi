@@ -6,5 +6,6 @@
 #include "cppJoshi_bits/payoff.hpp"
 #include "cppJoshi_bits/doubleDigital.hpp"
 #include "cppJoshi_bits/powerOptions.hpp"
+#include "cppJoshi_bits/vanilla.hpp"
 
 #endif

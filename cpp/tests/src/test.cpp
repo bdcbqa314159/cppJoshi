@@ -344,6 +344,23 @@ void exercise10()
     std::cout << "We have inheritance between all asians put/calls geometric/arithmetic & digitals from asian as exotic." << std::endl;
     std::cout << "jump diffusion as model pricing" << std::endl;
     std::cout << "statistics errors from standard errors" << std::endl;
+    return;
+}
+
+void vanillaMain1()
+{
+    double spot(100.), expiry(1.), r(0.03), vol(0.02), strike(140.), strike1(80.);
+    unsigned long N = 30000;
+
+    PayoffDoubleDigital2 thePayoff(strike1, strike);
+    VanillaOption1 theOption(thePayoff, expiry);
+
+    double result(0);
+    result = simpleMonteCarlo3(theOption, spot, vol, r, N);
+
+    std::cout << "Price of a call with simple Monte Carlo simulation : " << result << std::endl;
+
+    return;
 }
 
 int main()
@@ -361,13 +378,16 @@ int main()
     // exercise6();
     // exercise7();
 
-    std::cout << "======Chapter 3======" << std::endl;
+    // std::cout << "======Chapter 3======" << std::endl;
     // simpleMCMain3();
     // simpleMCMain4();
     // simpleMCMain5();
     // exercise8();
-    exercise9();
-    exercise10();
+    // exercise9();
+    // exercise10();
+
+    std::cout << "======Chapter 4======" << std::endl;
+    vanillaMain1();
 
     return 0;
 }
