@@ -52,3 +52,31 @@ double PayoffPut2::operator()(double spot) const
 
     return std::max(strike - spot, 0.);
 }
+
+PayoffCall3::PayoffCall3(double strike) : strike(strike)
+{
+}
+
+double PayoffCall3::operator()(double spot) const
+{
+    return std::max(spot - strike, 0.);
+}
+
+PayoffCall3 *PayoffCall3::clone() const
+{
+    return new PayoffCall3(*this);
+}
+
+PayoffPut3::PayoffPut3(double strike) : strike(strike)
+{
+}
+
+double PayoffPut3::operator()(double spot) const
+{
+    return std::max(strike - spot, 0.);
+}
+
+PayoffPut3 *PayoffPut3::clone() const
+{
+    return new PayoffPut3(*this);
+}

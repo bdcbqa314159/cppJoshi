@@ -18,4 +18,6 @@ double simpleMonteCarlo2(const Payoff2 &thePayoff, double expiry, double spot, d
 
 double simpleMonteCarlo3(const VanillaOption1 &theOption, double spot, double vol, double r, unsigned long numberOfPaths);
 
+double simpleMonteCarlo3(const VanillaOption2 &theOption, double spot, double vol, double r, unsigned long numberOfPaths);
+
 #endif

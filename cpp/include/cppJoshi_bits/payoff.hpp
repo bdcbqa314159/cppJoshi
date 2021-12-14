@@ -59,4 +59,44 @@ private:
     double strike;
 };
 
+class Payoff3
+{
+public:
+    Payoff3(){};
+
+    virtual double operator()(double spot) const = 0;
+    virtual ~Payoff3() {}
+    virtual Payoff3 *clone() const = 0;
+
+private:
+};
+
+class PayoffCall3 : public Payoff3
+{
+
+public:
+    PayoffCall3(double strike);
+
+    virtual double operator()(double spot) const;
+    virtual ~PayoffCall3() {}
+    virtual PayoffCall3 *clone() const;
+
+private:
+    double strike;
+};
+
+class PayoffPut3 : public Payoff3
+{
+
+public:
+    PayoffPut3(double strike);
+
+    virtual double operator()(double spot) const;
+    virtual ~PayoffPut3() {}
+    virtual PayoffPut3 *clone() const;
+
+private:
+    double strike;
+};
+
 #endif

@@ -15,4 +15,19 @@ private:
     double upperLevel;
 };
 
+class PayoffDoubleDigital3 : public Payoff3
+{
+
+public:
+    PayoffDoubleDigital3(double lowerLevel, double upperLevel);
+
+    virtual double operator()(double spot) const;
+    virtual ~PayoffDoubleDigital3() {}
+    virtual PayoffDoubleDigital3 *clone() const;
+
+private:
+    double lowerLevel;
+    double upperLevel;
+};
+
 #endif

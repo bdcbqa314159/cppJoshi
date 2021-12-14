@@ -352,14 +352,45 @@ void vanillaMain1()
     double spot(100.), expiry(1.), r(0.03), vol(0.02), strike(140.), strike1(80.);
     unsigned long N = 30000;
 
+    double result(0);
+
     PayoffDoubleDigital2 thePayoff(strike1, strike);
     VanillaOption1 theOption(thePayoff, expiry);
 
-    double result(0);
     result = simpleMonteCarlo3(theOption, spot, vol, r, N);
 
-    std::cout << "Price of a call with simple Monte Carlo simulation : " << result << std::endl;
+    std::cout << "Price of Double Digital with simple Monte Carlo simulation : " << result << std::endl;
 
+    return;
+}
+
+void vanillaMain2()
+{
+    double spot(100.), expiry(1.), r(0.03), vol(0.02), strike(140.);
+    unsigned long N = 30000;
+
+    double result(0);
+
+    PayoffCall3 thePayoff(strike);
+    VanillaOption2 theOption(thePayoff, expiry);
+
+    double resultCall(0), resultPut(0);
+
+    resultCall = simpleMonteCarlo3(theOption, spot, vol, r, N);
+
+    std::cout << "Price of a call with simple Monte Carlo simulation : " << resultCall << std::endl;
+
+    VanillaOption2 secondOption(theOption);
+
+    resultCall = simpleMonteCarlo3(secondOption, spot, vol, r, N);
+
+    std::cout << "Price of another call with simple Monte Carlo simulation : " << resultCall << std::endl;
+
+    PayoffPut3 otherPayoff(strike);
+    VanillaOption2 otherOption(otherPayoff, expiry);
+    resultPut = simpleMonteCarlo3(otherOption, spot, vol, r, N);
+
+    std::cout << "Price of a put with simple Monte Carlo simulation : " << resultPut << std::endl;
     return;
 }
 
@@ -388,6 +419,7 @@ int main()
 
     std::cout << "======Chapter 4======" << std::endl;
     vanillaMain1();
+    vanillaMain2();
 
     return 0;
 }
