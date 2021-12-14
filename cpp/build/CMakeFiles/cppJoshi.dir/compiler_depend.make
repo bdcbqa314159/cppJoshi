@@ -161,6 +161,9 @@ CMakeFiles/cppJoshi.dir/src/doubleDigital.cpp.o: ../src/doubleDigital.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/functional \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/bit
 
+CMakeFiles/cppJoshi.dir/src/parameters.cpp.o: ../src/parameters.cpp \
+  ../include/cppJoshi_bits/parameters.hpp
+
 CMakeFiles/cppJoshi.dir/src/payoff.cpp.o: ../src/payoff.cpp \
   ../include/cppJoshi_bits/payoff.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/algorithm \
@@ -575,6 +578,7 @@ CMakeFiles/cppJoshi.dir/src/simpleMC.cpp.o: ../src/simpleMC.cpp \
   ../include/cppJoshi_bits/payoff.hpp \
   ../include/cppJoshi_bits/vanilla.hpp \
   ../include/cppJoshi_bits/payoffBridge.hpp \
+  ../include/cppJoshi_bits/parameters.hpp \
   ../include/cppJoshi_bits/random.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/cmath \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/__config \
@@ -943,6 +947,8 @@ CMakeFiles/cppJoshi.dir/src/vanilla.cpp.o: ../src/vanilla.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/sys/qos.h:
 
+../src/parameters.cpp:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/sys/_pthread/_pthread_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/_types/_intmax_t.h:
@@ -998,6 +1004,8 @@ CMakeFiles/cppJoshi.dir/src/vanilla.cpp.o: ../src/vanilla.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/limits.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/__threading_support:
+
+../include/cppJoshi_bits/parameters.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/cstring:
 
@@ -1122,10 +1130,6 @@ CMakeFiles/cppJoshi.dir/src/vanilla.cpp.o: ../src/vanilla.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/sys/_pthread/_pthread_mutex_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/iosfwd:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/climits:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/xlocale/__wctype.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/__debug:
 
@@ -1280,6 +1284,10 @@ CMakeFiles/cppJoshi.dir/src/vanilla.cpp.o: ../src/vanilla.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/ctype.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/sys/_types/_ct_rune_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/xlocale/__wctype.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/climits:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/utility:
 

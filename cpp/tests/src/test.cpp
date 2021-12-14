@@ -424,6 +424,27 @@ void vanillaMain3()
     return;
 }
 
+void vanillaMain4()
+{
+    double spot(100.), expiry(1.), r(0.03), vol(0.02), strike(140.);
+    unsigned long N = 30000;
+
+    double result(0);
+
+    PayoffCall3 thePayoff(strike);
+    VanillaOption3 theOption(thePayoff, expiry);
+
+    double resultCall(0), resultPut(0);
+    ParametersConstant volParam(vol);
+    ParametersConstant rParam(r);
+
+    resultCall = simpleMonteCarlo4(theOption, spot, volParam, rParam, N);
+
+    std::cout << "Price of a call with simple Monte Carlo simulation : " << resultCall << std::endl;
+
+    return;
+}
+
 int main()
 {
     // std::cout << "======Chapter 1======" << std::endl;
@@ -451,6 +472,7 @@ int main()
     // vanillaMain1();
     // vanillaMain2();
     vanillaMain3();
+    vanillaMain4();
 
     return 0;
 }

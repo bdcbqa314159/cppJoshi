@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/cppJoshi.dir/src/doubleDigital.cpp.o"
   "CMakeFiles/cppJoshi.dir/src/doubleDigital.cpp.o.d"
+  "CMakeFiles/cppJoshi.dir/src/parameters.cpp.o"
+  "CMakeFiles/cppJoshi.dir/src/parameters.cpp.o.d"
   "CMakeFiles/cppJoshi.dir/src/payoff.cpp.o"
   "CMakeFiles/cppJoshi.dir/src/payoff.cpp.o.d"
   "CMakeFiles/cppJoshi.dir/src/payoffBridge.cpp.o"

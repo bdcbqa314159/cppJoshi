@@ -8,6 +8,7 @@ CMakeFiles/test.dir/src/test.cpp.o: ../src/test.cpp \
   /usr/local/include/cppJoshi_bits/payoff.hpp \
   /usr/local/include/cppJoshi_bits/vanilla.hpp \
   /usr/local/include/cppJoshi_bits/payoffBridge.hpp \
+  /usr/local/include/cppJoshi_bits/parameters.hpp \
   /usr/local/include/cppJoshi_bits/doubleDigital.hpp \
   /usr/local/include/cppJoshi_bits/powerOptions.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/iostream \
@@ -549,6 +550,10 @@ CMakeFiles/test.dir/src/test.cpp.o: ../src/test.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/sys/_types/_wchar_t.h:
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/utility:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/sys/_types/_ct_rune_t.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/system_error:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/string_view:
@@ -576,10 +581,6 @@ CMakeFiles/test.dir/src/test.cpp.o: ../src/test.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/stdexcept:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/sys/_types/_int16_t.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/utility:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/sys/_types/_ct_rune_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/i386/types.h:
 
@@ -625,18 +626,6 @@ CMakeFiles/test.dir/src/test.cpp.o: ../src/test.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/sys/_symbol_aliasing.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/__mutex_base:
-
-/usr/local/include/cppJoshi_bits/payoffBridge.hpp:
-
-/usr/local/include/cppJoshi_bits/doubleDigital.hpp:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/xlocale/_wctype.h:
-
-/usr/local/include/cppJoshi_bits/vanilla.hpp:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/sys/cdefs.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/ios:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/i386/_types.h:
@@ -675,6 +664,12 @@ CMakeFiles/test.dir/src/test.cpp.o: ../src/test.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/__config:
 
+/usr/local/include/cppJoshi_bits/doubleDigital.hpp:
+
+/usr/local/include/cppJoshi_bits/payoffBridge.hpp:
+
+/usr/local/include/cppJoshi_bits/parameters.hpp:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/pthread/qos.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/_types/_uint64_t.h:
@@ -686,6 +681,14 @@ CMakeFiles/test.dir/src/test.cpp.o: ../src/test.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/_types.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/sys/_types/_intptr_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/xlocale/_wctype.h:
+
+/usr/local/include/cppJoshi_bits/vanilla.hpp:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/__mutex_base:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/sys/cdefs.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/__locale:
 

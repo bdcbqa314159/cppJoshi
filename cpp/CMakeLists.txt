@@ -25,6 +25,7 @@ set(SOURCE_FILES
     ${PROJECT_INCLUDE_DIR}/powerOptions.hpp
     ${PROJECT_INCLUDE_DIR}/vanilla.hpp
     ${PROJECT_INCLUDE_DIR}/payoffBridge.hpp
+    ${PROJECT_INCLUDE_DIR}/parameters.hpp
     
 
     ${PROJECT_SOURCE_DIR}/random.cpp
@@ -34,6 +35,7 @@ set(SOURCE_FILES
     ${PROJECT_SOURCE_DIR}/powerOptions.cpp
     ${PROJECT_SOURCE_DIR}/vanilla.cpp
     ${PROJECT_SOURCE_DIR}/payoffBridge.cpp
+    ${PROJECT_SOURCE_DIR}/parameters.cpp
     
 )
 

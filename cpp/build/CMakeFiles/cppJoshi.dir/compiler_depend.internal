@@ -162,6 +162,10 @@ CMakeFiles/cppJoshi.dir/src/doubleDigital.cpp.o
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/functional
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/bit
 
+CMakeFiles/cppJoshi.dir/src/parameters.cpp.o
+ /Users/bernardocohen/repos/cppJoshi/cpp/src/parameters.cpp
+ /Users/bernardocohen/repos/cppJoshi/cpp/include/cppJoshi_bits/parameters.hpp
+
 CMakeFiles/cppJoshi.dir/src/payoff.cpp.o
  /Users/bernardocohen/repos/cppJoshi/cpp/src/payoff.cpp
  /Users/bernardocohen/repos/cppJoshi/cpp/include/cppJoshi_bits/payoff.hpp
@@ -581,6 +585,7 @@ CMakeFiles/cppJoshi.dir/src/simpleMC.cpp.o
  /Users/bernardocohen/repos/cppJoshi/cpp/include/cppJoshi_bits/payoff.hpp
  /Users/bernardocohen/repos/cppJoshi/cpp/include/cppJoshi_bits/vanilla.hpp
  /Users/bernardocohen/repos/cppJoshi/cpp/include/cppJoshi_bits/payoffBridge.hpp
+ /Users/bernardocohen/repos/cppJoshi/cpp/include/cppJoshi_bits/parameters.hpp
  /Users/bernardocohen/repos/cppJoshi/cpp/include/cppJoshi_bits/random.hpp
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/cmath
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/__config

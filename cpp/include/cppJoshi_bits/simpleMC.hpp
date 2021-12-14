@@ -3,6 +3,7 @@
 
 #include "payoff.hpp"
 #include "vanilla.hpp"
+#include "parameters.hpp"
 
 double simpleMonteCarlo1(double expiry, double strike, double spot, double vol, double r, unsigned long numberOfPaths);
 
@@ -21,5 +22,7 @@ double simpleMonteCarlo3(const VanillaOption1 &theOption, double spot, double vo
 double simpleMonteCarlo3(const VanillaOption2 &theOption, double spot, double vol, double r, unsigned long numberOfPaths);
 
 double simpleMonteCarlo3(const VanillaOption3 &theOption, double spot, double vol, double r, unsigned long numberOfPaths);
+
+double simpleMonteCarlo4(const VanillaOption3 &theOption, double spot, const Parameters &vol, const Parameters &r, unsigned long numberOfPaths);
 
 #endif

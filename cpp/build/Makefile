@@ -198,6 +198,30 @@ src/doubleDigital.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/doubleDigital.cpp.s
 .PHONY : src/doubleDigital.cpp.s
 
+src/parameters.o: src/parameters.cpp.o
+.PHONY : src/parameters.o
+
+# target to build an object file
+src/parameters.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/parameters.cpp.o
+.PHONY : src/parameters.cpp.o
+
+src/parameters.i: src/parameters.cpp.i
+.PHONY : src/parameters.i
+
+# target to preprocess a source file
+src/parameters.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/parameters.cpp.i
+.PHONY : src/parameters.cpp.i
+
+src/parameters.s: src/parameters.cpp.s
+.PHONY : src/parameters.s
+
+# target to generate assembly for a file
+src/parameters.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/parameters.cpp.s
+.PHONY : src/parameters.cpp.s
+
 src/payoff.o: src/payoff.cpp.o
 .PHONY : src/payoff.o
 
@@ -358,6 +382,9 @@ help:
 	@echo "... src/doubleDigital.o"
 	@echo "... src/doubleDigital.i"
 	@echo "... src/doubleDigital.s"
+	@echo "... src/parameters.o"
+	@echo "... src/parameters.i"
+	@echo "... src/parameters.s"
 	@echo "... src/payoff.o"
 	@echo "... src/payoff.i"
 	@echo "... src/payoff.s"
