@@ -1,4 +1,6 @@
 #include "../include/cppJoshi_bits/parameters.hpp"
+#include <algorithm>
+#include <iostream>
 
 Parameters::Parameters(const ParametersInner &innerObject)
 {
@@ -56,4 +58,85 @@ double ParametersConstant::Integral(double time1, double time2) const
 double ParametersConstant::IntegralSquare(double time1, double time2) const
 {
     return (time2 - time1) * constantSquare;
+}
+
+ParametersPieceWise::ParametersPieceWise(std::vector<double> constants, std::vector<double> times) : constants(constants), times(times)
+{
+    std::sort(times.begin(), times.end());
+    if (times.size() != constants.size() + 1)
+    {
+        std::cout << "check PieceWise Parameters inputs!" << std::endl;
+    }
+}
+
+ParametersInner *ParametersPieceWise::clone() const
+{
+    return new ParametersPieceWise(*this);
+}
+
+double ParametersPieceWise::Integral(double time1, double time2) const
+{
+    double integral = 0;
+    int i(0);
+    int N = constants.size();
+
+    if (time1 > times[0])
+    {
+        while (times[i] < time1 && i < N)
+        {
+            i++;
+        }
+
+        integral += constants[i - 1] * (times[i] - time1);
+    }
+
+    while (times[i] < time2 && i < N)
+    {
+        if (times[i + 1] < time2)
+        {
+            integral += constants[i] * (times[i + 1] - times[i]);
+            i++;
+        }
+        else
+        {
+            break;
+        }
+    }
+
+    if (i >= N)
+    {
+        return integral;
+    }
+    else
+    {
+        integral += constants[i] * (time2 - times[i]);
+        return integral;
+    }
+}
+
+double ParametersPieceWise::IntegralSquare(double time1, double time2) const
+{
+    double integral = 0;
+    int i = 0;
+    while (times[i] < time1)
+    {
+        i++;
+    }
+    integral += constants[i] * constants[i] * (times[i] - time1);
+
+    while (times[i] < time2)
+    {
+        if (times[i + 1] < time2)
+        {
+            integral += constants[i] * constants[i] * (times[i + 1] - times[i]);
+            i++;
+        }
+        else
+        {
+            break;
+        }
+    }
+
+    integral += constants[i] * constants[i] * (time2 - times[i]);
+    return integral;
 }

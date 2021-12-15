@@ -1,6 +1,8 @@
 #ifndef PARAMETERS_H
 #define PARAMETERS_H
 
+#include <vector>
+
 class ParametersInner
 {
 
@@ -56,6 +58,21 @@ public:
 private:
     double constant;
     double constantSquare;
+};
+
+//Exercise 4.1
+class ParametersPieceWise : public ParametersInner
+{
+
+public:
+    ParametersPieceWise(std::vector<double> constants, std::vector<double> times);
+    virtual ParametersInner *clone() const;
+    virtual double Integral(double time1, double time2) const;
+    virtual double IntegralSquare(double time1, double time2) const;
+
+private:
+    std::vector<double> constants;
+    std::vector<double> times;
 };
 
 #endif

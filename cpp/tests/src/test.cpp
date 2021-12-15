@@ -445,6 +445,47 @@ void vanillaMain4()
     return;
 }
 
+void exercise11()
+{
+    //Exercise 4.1
+    std::cout << "Testing if new is slow is irrelevant by now." << std::endl;
+}
+
+void exercise12()
+{
+    //Exercise 4.2
+    std::cout << "auto_ptr is now deprecated, it is an example of smart pointer." << std::endl;
+}
+
+void exercise13()
+{
+    //Exercise 4.3
+    std::cout << "Testing PieceWise paramters" << std::endl;
+    std::vector<double> values = {1, 2};
+    std::vector<double> times = {0, 3, 5};
+    ParametersPieceWise f(values, times);
+    double integral = f.Integral(0, 4);
+    std::cout << "Integral " << integral << std::endl;
+
+    integral = f.Integral(0, 8);
+    std::cout << "Integral " << integral << std::endl;
+
+    integral = f.Integral(2, 8);
+    std::cout << "Integral " << integral << std::endl;
+
+    integral = f.Integral(-2, 8);
+    std::cout << "Integral " << integral << std::endl;
+
+    integral = f.Integral(0, 5);
+    std::cout << "Integral " << integral << std::endl;
+
+    integral = f.Integral(-1, 0);
+    std::cout << "Integral " << integral << std::endl;
+
+    integral = f.Integral(5, 100);
+    std::cout << "Integral " << integral << std::endl;
+}
+
 int main()
 {
     // std::cout << "======Chapter 1======" << std::endl;
@@ -471,8 +512,9 @@ int main()
     std::cout << "======Chapter 4======" << std::endl;
     // vanillaMain1();
     // vanillaMain2();
-    vanillaMain3();
+    // vanillaMain3();
     vanillaMain4();
+    exercise13();
 
     return 0;
 }
