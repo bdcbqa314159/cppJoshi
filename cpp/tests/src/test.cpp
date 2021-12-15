@@ -484,6 +484,9 @@ void exercise13()
 
     integral = f.Integral(5, 100);
     std::cout << "Integral " << integral << std::endl;
+
+    integral = f.Integral(3, 100);
+    std::cout << "Integral " << integral << std::endl;
 }
 
 int main()
