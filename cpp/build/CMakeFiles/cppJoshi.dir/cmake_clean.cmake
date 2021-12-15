@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/cppJoshi.dir/src/convergenceTable.cpp.o"
+  "CMakeFiles/cppJoshi.dir/src/convergenceTable.cpp.o.d"
   "CMakeFiles/cppJoshi.dir/src/doubleDigital.cpp.o"
   "CMakeFiles/cppJoshi.dir/src/doubleDigital.cpp.o.d"
   "CMakeFiles/cppJoshi.dir/src/mcStatistics.cpp.o"

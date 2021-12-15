@@ -27,6 +27,8 @@ set(SOURCE_FILES
     ${PROJECT_INCLUDE_DIR}/payoffBridge.hpp
     ${PROJECT_INCLUDE_DIR}/parameters.hpp
     ${PROJECT_INCLUDE_DIR}/mcStatistics.hpp
+    ${PROJECT_INCLUDE_DIR}/wrapper.hpp
+    ${PROJECT_INCLUDE_DIR}/convergenceTable.hpp
     
 
     ${PROJECT_SOURCE_DIR}/random.cpp
@@ -38,6 +40,7 @@ set(SOURCE_FILES
     ${PROJECT_SOURCE_DIR}/payoffBridge.cpp
     ${PROJECT_SOURCE_DIR}/parameters.cpp
     ${PROJECT_SOURCE_DIR}/mcStatistics.cpp
+    ${PROJECT_SOURCE_DIR}/convergenceTable.cpp
     
 )
 

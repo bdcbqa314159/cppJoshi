@@ -117,14 +117,20 @@ double ParametersPieceWise::Integral(double time1, double time2) const
 double ParametersPieceWise::IntegralSquare(double time1, double time2) const
 {
     double integral = 0;
-    int i = 0;
-    while (times[i] < time1)
-    {
-        i++;
-    }
-    integral += constants[i] * constants[i] * (times[i] - time1);
+    int i(0);
+    int N = constants.size();
 
-    while (times[i] < time2)
+    if (time1 > times[0])
+    {
+        while (times[i] < time1 && i < N)
+        {
+            i++;
+        }
+
+        integral += constants[i - 1] * constants[i - 1] * (times[i] - time1);
+    }
+
+    while (times[i] < time2 && i < N)
     {
         if (times[i + 1] < time2)
         {
@@ -137,6 +143,13 @@ double ParametersPieceWise::IntegralSquare(double time1, double time2) const
         }
     }
 
-    integral += constants[i] * constants[i] * (time2 - times[i]);
-    return integral;
+    if (i >= N)
+    {
+        return integral;
+    }
+    else
+    {
+        integral += constants[i] * constants[i] * (time2 - times[i]);
+        return integral;
+    }
 }

@@ -9,4 +9,6 @@
 /usr/local/include/cppJoshi_bits/random.hpp
 /usr/local/include/cppJoshi_bits/powerOptions.hpp
 /usr/local/include/cppJoshi_bits/parameters.hpp
+/usr/local/include/cppJoshi_bits/convergenceTable.hpp
+/usr/local/include/cppJoshi_bits/wrapper.hpp
 /usr/local/include/cppJoshi_bits/simpleMC.hpp

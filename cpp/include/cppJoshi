@@ -10,5 +10,7 @@
 #include "cppJoshi_bits/payoffBridge.hpp"
 #include "cppJoshi_bits/parameters.hpp"
 #include "cppJoshi_bits/mcStatistics.hpp"
+#include "cppJoshi_bits/wrapper.hpp"
+#include "cppJoshi_bits/convergenceTable.hpp"
 
 #endif
