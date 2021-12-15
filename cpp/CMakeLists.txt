@@ -26,6 +26,7 @@ set(SOURCE_FILES
     ${PROJECT_INCLUDE_DIR}/vanilla.hpp
     ${PROJECT_INCLUDE_DIR}/payoffBridge.hpp
     ${PROJECT_INCLUDE_DIR}/parameters.hpp
+    ${PROJECT_INCLUDE_DIR}/mcStatistics.hpp
     
 
     ${PROJECT_SOURCE_DIR}/random.cpp
@@ -36,6 +37,7 @@ set(SOURCE_FILES
     ${PROJECT_SOURCE_DIR}/vanilla.cpp
     ${PROJECT_SOURCE_DIR}/payoffBridge.cpp
     ${PROJECT_SOURCE_DIR}/parameters.cpp
+    ${PROJECT_SOURCE_DIR}/mcStatistics.cpp
     
 )
 

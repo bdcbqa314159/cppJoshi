@@ -198,6 +198,30 @@ src/doubleDigital.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/doubleDigital.cpp.s
 .PHONY : src/doubleDigital.cpp.s
 
+src/mcStatistics.o: src/mcStatistics.cpp.o
+.PHONY : src/mcStatistics.o
+
+# target to build an object file
+src/mcStatistics.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/mcStatistics.cpp.o
+.PHONY : src/mcStatistics.cpp.o
+
+src/mcStatistics.i: src/mcStatistics.cpp.i
+.PHONY : src/mcStatistics.i
+
+# target to preprocess a source file
+src/mcStatistics.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/mcStatistics.cpp.i
+.PHONY : src/mcStatistics.cpp.i
+
+src/mcStatistics.s: src/mcStatistics.cpp.s
+.PHONY : src/mcStatistics.s
+
+# target to generate assembly for a file
+src/mcStatistics.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/mcStatistics.cpp.s
+.PHONY : src/mcStatistics.cpp.s
+
 src/parameters.o: src/parameters.cpp.o
 .PHONY : src/parameters.o
 
@@ -382,6 +406,9 @@ help:
 	@echo "... src/doubleDigital.o"
 	@echo "... src/doubleDigital.i"
 	@echo "... src/doubleDigital.s"
+	@echo "... src/mcStatistics.o"
+	@echo "... src/mcStatistics.i"
+	@echo "... src/mcStatistics.s"
 	@echo "... src/parameters.o"
 	@echo "... src/parameters.i"
 	@echo "... src/parameters.s"

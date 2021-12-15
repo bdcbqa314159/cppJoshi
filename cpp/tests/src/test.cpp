@@ -489,6 +489,40 @@ void exercise13()
     std::cout << "Integral " << integral << std::endl;
 }
 
+void statsMain1()
+{
+    double spot(100.), expiry(1.), r(0.03), vol(0.02), strike(90.);
+    unsigned long N = 30000;
+
+    double result(0);
+
+    PayoffCall3 thePayoff(strike);
+    VanillaOption3 theOption(thePayoff, expiry);
+
+    double resultCall(0), resultPut(0);
+    ParametersConstant volParam(vol);
+    ParametersConstant rParam(r);
+
+    StatisticsMean gatherer;
+
+    simpleMonteCarlo5(theOption, spot, volParam, rParam, N, gatherer);
+
+    std::vector<std::vector<double>> results = gatherer.getResultsSoFar();
+
+    std::cout << "For the call price the results are :" << std::endl;
+
+    for (unsigned long i = 0; i < results.size(); i++)
+    {
+        for (unsigned long j = 0; j < results[i].size(); j++)
+        {
+            std::cout << results[i][j] << " ";
+        }
+        std::cout << std::endl;
+    }
+
+    return;
+}
+
 int main()
 {
     // std::cout << "======Chapter 1======" << std::endl;
@@ -512,12 +546,17 @@ int main()
     // exercise9();
     // exercise10();
 
-    std::cout << "======Chapter 4======" << std::endl;
+    // std::cout << "======Chapter 4======" << std::endl;
     // vanillaMain1();
     // vanillaMain2();
     // vanillaMain3();
-    vanillaMain4();
-    exercise13();
+    // vanillaMain4();
+    // exercise11();
+    // exercise12();
+    // exercise13();
+
+    std::cout << "======Chapter 5======" << std::endl;
+    statsMain1();
 
     return 0;
 }

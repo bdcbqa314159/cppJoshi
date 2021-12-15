@@ -9,5 +9,6 @@
 #include "cppJoshi_bits/vanilla.hpp"
 #include "cppJoshi_bits/payoffBridge.hpp"
 #include "cppJoshi_bits/parameters.hpp"
+#include "cppJoshi_bits/mcStatistics.hpp"
 
 #endif
