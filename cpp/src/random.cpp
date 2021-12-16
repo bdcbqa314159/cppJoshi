@@ -1,4 +1,5 @@
 #include "../include/cppJoshi_bits/random.hpp"
+#include "../include/cppJoshi_bits/normals.hpp"
 
 #include <cmath>
 #include <cstdlib>
@@ -35,4 +36,26 @@ double getOneGaussianByBoxMuller()
     result = x * sqrt(-2 * log(sizeSquared) / sizeSquared);
 
     return result;
+}
+
+void RandomBase::getGaussians(Array &variates)
+{
+
+    getUniforms(variates);
+
+    for (unsigned long i = 0; i < dimensionality; i++)
+    {
+        double x = variates[i];
+        variates[i] = inverseCumulativeNormal(x);
+    }
+}
+
+void RandomBase::resetDimensionality(unsigned long newDimensionality)
+{
+
+    dimensionality = newDimensionality;
+}
+
+RandomBase::RandomBase(unsigned long dimensionality) : dimensionality(dimensionality)
+{
 }
