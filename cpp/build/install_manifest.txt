@@ -4,6 +4,8 @@
 /usr/local/include/cppJoshi_bits/vanilla.hpp
 /usr/local/include/cppJoshi_bits/mcStatistics.hpp
 /usr/local/include/cppJoshi_bits/.DS_Store
+/usr/local/include/cppJoshi_bits/normals.hpp
+/usr/local/include/cppJoshi_bits/arrays.hpp
 /usr/local/include/cppJoshi_bits/doubleDigital.hpp
 /usr/local/include/cppJoshi_bits/payoff.hpp
 /usr/local/include/cppJoshi_bits/random.hpp

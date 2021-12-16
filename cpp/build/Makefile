@@ -174,6 +174,30 @@ cppJoshi/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/build
 .PHONY : cppJoshi/fast
 
+src/arrays.o: src/arrays.cpp.o
+.PHONY : src/arrays.o
+
+# target to build an object file
+src/arrays.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/arrays.cpp.o
+.PHONY : src/arrays.cpp.o
+
+src/arrays.i: src/arrays.cpp.i
+.PHONY : src/arrays.i
+
+# target to preprocess a source file
+src/arrays.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/arrays.cpp.i
+.PHONY : src/arrays.cpp.i
+
+src/arrays.s: src/arrays.cpp.s
+.PHONY : src/arrays.s
+
+# target to generate assembly for a file
+src/arrays.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/arrays.cpp.s
+.PHONY : src/arrays.cpp.s
+
 src/convergenceTable.o: src/convergenceTable.cpp.o
 .PHONY : src/convergenceTable.o
 
@@ -245,6 +269,30 @@ src/mcStatistics.s: src/mcStatistics.cpp.s
 src/mcStatistics.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/mcStatistics.cpp.s
 .PHONY : src/mcStatistics.cpp.s
+
+src/normals.o: src/normals.cpp.o
+.PHONY : src/normals.o
+
+# target to build an object file
+src/normals.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/normals.cpp.o
+.PHONY : src/normals.cpp.o
+
+src/normals.i: src/normals.cpp.i
+.PHONY : src/normals.i
+
+# target to preprocess a source file
+src/normals.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/normals.cpp.i
+.PHONY : src/normals.cpp.i
+
+src/normals.s: src/normals.cpp.s
+.PHONY : src/normals.s
+
+# target to generate assembly for a file
+src/normals.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/normals.cpp.s
+.PHONY : src/normals.cpp.s
 
 src/parameters.o: src/parameters.cpp.o
 .PHONY : src/parameters.o
@@ -427,6 +475,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... cppJoshi"
+	@echo "... src/arrays.o"
+	@echo "... src/arrays.i"
+	@echo "... src/arrays.s"
 	@echo "... src/convergenceTable.o"
 	@echo "... src/convergenceTable.i"
 	@echo "... src/convergenceTable.s"
@@ -436,6 +487,9 @@ help:
 	@echo "... src/mcStatistics.o"
 	@echo "... src/mcStatistics.i"
 	@echo "... src/mcStatistics.s"
+	@echo "... src/normals.o"
+	@echo "... src/normals.i"
+	@echo "... src/normals.s"
 	@echo "... src/parameters.o"
 	@echo "... src/parameters.i"
 	@echo "... src/parameters.s"

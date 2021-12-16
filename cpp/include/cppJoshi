@@ -12,5 +12,7 @@
 #include "cppJoshi_bits/mcStatistics.hpp"
 #include "cppJoshi_bits/wrapper.hpp"
 #include "cppJoshi_bits/convergenceTable.hpp"
+#include "cppJoshi_bits/normals.hpp"
+#include "cppJoshi_bits/arrays.hpp"
 
 #endif
