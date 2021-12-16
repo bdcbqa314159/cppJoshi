@@ -59,3 +59,7 @@ void RandomBase::resetDimensionality(unsigned long newDimensionality)
 RandomBase::RandomBase(unsigned long dimensionality) : dimensionality(dimensionality)
 {
 }
+
+RandomBase::~RandomBase()
+{
+}

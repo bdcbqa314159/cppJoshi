@@ -23,6 +23,7 @@ public:
 
     virtual void getGaussians(Array &variates);
     virtual void resetDimensionality(unsigned long newDimensionality);
+    virtual ~RandomBase();
 
 private:
     unsigned long dimensionality;

@@ -14,5 +14,7 @@
 #include "cppJoshi_bits/convergenceTable.hpp"
 #include "cppJoshi_bits/normals.hpp"
 #include "cppJoshi_bits/arrays.hpp"
+#include "cppJoshi_bits/parkMiller.hpp"
+#include "cppJoshi_bits/antiThetic.hpp"
 
 #endif

@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/cppJoshi.dir/src/antiThetic.cpp.o"
+  "CMakeFiles/cppJoshi.dir/src/antiThetic.cpp.o.d"
   "CMakeFiles/cppJoshi.dir/src/arrays.cpp.o"
   "CMakeFiles/cppJoshi.dir/src/arrays.cpp.o.d"
   "CMakeFiles/cppJoshi.dir/src/convergenceTable.cpp.o"
@@ -11,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/cppJoshi.dir/src/normals.cpp.o.d"
   "CMakeFiles/cppJoshi.dir/src/parameters.cpp.o"
   "CMakeFiles/cppJoshi.dir/src/parameters.cpp.o.d"
+  "CMakeFiles/cppJoshi.dir/src/parkMiller.cpp.o"
+  "CMakeFiles/cppJoshi.dir/src/parkMiller.cpp.o.d"
   "CMakeFiles/cppJoshi.dir/src/payoff.cpp.o"
   "CMakeFiles/cppJoshi.dir/src/payoff.cpp.o.d"
   "CMakeFiles/cppJoshi.dir/src/payoffBridge.cpp.o"

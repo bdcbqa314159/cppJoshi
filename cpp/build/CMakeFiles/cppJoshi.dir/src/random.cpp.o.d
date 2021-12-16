@@ -1,6 +1,8 @@
 CMakeFiles/cppJoshi.dir/src/random.cpp.o: \
   /Users/bernardocohen/repos/cppJoshi/cpp/src/random.cpp \
   /Users/bernardocohen/repos/cppJoshi/cpp/src/../include/cppJoshi_bits/random.hpp \
+  /Users/bernardocohen/repos/cppJoshi/cpp/include/cppJoshi_bits/arrays.hpp \
+  /Users/bernardocohen/repos/cppJoshi/cpp/src/../include/cppJoshi_bits/normals.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/cmath \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/pthread.h \

@@ -30,7 +30,7 @@ double inverseCumulativeNormal(double u)
                           0.0000002888167364,
                           0.0000003960315187};
 
-    double x = u = -0.5;
+    double x = u - 0.5;
     double r(0);
 
     if (fabs(x) < 0.42)

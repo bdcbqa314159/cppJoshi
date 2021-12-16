@@ -1,5 +1,5 @@
 #include "../include/cppJoshi_bits/simpleMC.hpp"
-#include "../include/cppJoshi_bits/random.hpp"
+#include "../include/cppJoshi_bits/arrays.hpp"
 
 #include <cmath>
 #include <iostream>
@@ -265,6 +265,31 @@ void simpleMonteCarlo5(const VanillaOption3 &theOption, double spot, const Param
     {
         double thisGaussian = getOneGaussianByBoxMuller();
         thisSpot = movedSpot * exp(rootVariance * thisGaussian);
+        double thisPayoff = theOption.optionPayoff(thisSpot);
+        gatherer.dumpOneResult(thisPayoff * discounting);
+    }
+
+    return;
+}
+
+void simpleMonteCarlo6(const VanillaOption3 &theOption, double spot, const Parameters &vol, const Parameters &r, unsigned long numberOfPaths, StatisticsMC &gatherer, RandomBase &generator)
+{
+    generator.resetDimensionality(1);
+
+    double expiry = theOption.getExpiry();
+    double variance = vol.IntegralSquare(0, expiry);
+    double rootVariance = sqrt(variance);
+    double itoCorrection = -0.5 * variance;
+
+    double movedSpot = spot * exp(r.Integral(0, expiry) + itoCorrection);
+    double thisSpot(0);
+    double discounting = exp(-r.Integral(0, expiry));
+
+    Array variateArray(1);
+    for (unsigned long i = 0; i < numberOfPaths; i++)
+    {
+        generator.getGaussians(variateArray);
+        thisSpot = movedSpot * exp(rootVariance * variateArray[0]);
         double thisPayoff = theOption.optionPayoff(thisSpot);
         gatherer.dumpOneResult(thisPayoff * discounting);
     }

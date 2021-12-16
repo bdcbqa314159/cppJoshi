@@ -10,7 +10,6 @@ public:
     AntiThetic(const Wrapper<RandomBase> &innerGenerator);
     virtual RandomBase *clone() const;
     virtual void getUniforms(Array &variates);
-    virtual void getUniforms(Array &variates);
     virtual void skip(unsigned long numberOfPaths);
     virtual void setSeed(unsigned long seed);
     virtual void resetDimensionality(unsigned long newDimensionality);

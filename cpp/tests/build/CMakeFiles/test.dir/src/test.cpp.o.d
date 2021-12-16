@@ -2,6 +2,7 @@ CMakeFiles/test.dir/src/test.cpp.o: \
   /Users/bernardocohen/repos/cppJoshi/cpp/tests/src/test.cpp \
   /usr/local/include/cppJoshi \
   /usr/local/include/cppJoshi_bits/random.hpp \
+  /usr/local/include/cppJoshi_bits/arrays.hpp \
   /usr/local/include/cppJoshi_bits/simpleMC.hpp \
   /usr/local/include/cppJoshi_bits/payoff.hpp \
   /usr/local/include/cppJoshi_bits/vanilla.hpp \
@@ -172,7 +173,8 @@ CMakeFiles/test.dir/src/test.cpp.o: \
   /usr/local/include/cppJoshi_bits/wrapper.hpp \
   /usr/local/include/cppJoshi_bits/convergenceTable.hpp \
   /usr/local/include/cppJoshi_bits/normals.hpp \
-  /usr/local/include/cppJoshi_bits/arrays.hpp \
+  /usr/local/include/cppJoshi_bits/parkMiller.hpp \
+  /usr/local/include/cppJoshi_bits/antiThetic.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/iostream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/ios \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/__locale \

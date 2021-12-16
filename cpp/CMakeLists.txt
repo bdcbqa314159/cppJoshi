@@ -31,6 +31,8 @@ set(SOURCE_FILES
     ${PROJECT_INCLUDE_DIR}/convergenceTable.hpp
     ${PROJECT_INCLUDE_DIR}/normals.hpp
     ${PROJECT_INCLUDE_DIR}/arrays.hpp
+    ${PROJECT_INCLUDE_DIR}/parkMiller.hpp
+    ${PROJECT_INCLUDE_DIR}/antiThetic.hpp
     
 
     ${PROJECT_SOURCE_DIR}/random.cpp
@@ -45,6 +47,8 @@ set(SOURCE_FILES
     ${PROJECT_SOURCE_DIR}/convergenceTable.cpp
     ${PROJECT_SOURCE_DIR}/normals.cpp
     ${PROJECT_SOURCE_DIR}/arrays.cpp
+    ${PROJECT_SOURCE_DIR}/parkMiller.cpp
+    ${PROJECT_SOURCE_DIR}/antiThetic.cpp
     
 )
 

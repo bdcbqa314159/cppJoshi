@@ -117,7 +117,7 @@ void simpleMCMain2()
 
 void exercise5()
 {
-    //Exercise 2.1
+    // Exercise 2.1
 
     double spot(100.), expiry(1.), r(0.03), vol(0.02), strike(100.);
     unsigned long N = 30000;
@@ -138,7 +138,7 @@ void exercise5()
 
 void exercise6()
 {
-    //Exercise 2.2
+    // Exercise 2.2
 
     double spot(100.), expiry(1.), r(0.03), vol(0.02), strike(80.), strikeDD(200.);
     unsigned long N = 30000;
@@ -239,7 +239,7 @@ void simpleMCMain5()
 
 void exercise8()
 {
-    //Exercise 3.1
+    // Exercise 3.1
     double spot(100.), expiry(1.), r(0.03), vol(0.02), strike(140.), strike1(80.);
     int power(4);
     unsigned long N = 30000;
@@ -281,7 +281,7 @@ void exercise8()
 
 void exercise9()
 {
-    //Exercise 3.2
+    // Exercise 3.2
     double spot(100.), expiry(1.), r(0.03), vol(0.02), strike(140.), strike1(80.);
     int power(4);
     unsigned long N = 30000;
@@ -339,7 +339,7 @@ void exercise9()
 
 void exercise10()
 {
-    //Exercise 3.3
+    // Exercise 3.3
     std::cout << "We have inheritance between digitals as payoffs." << std::endl;
     std::cout << "We have inheritance between all asians put/calls geometric/arithmetic & digitals from asian as exotic." << std::endl;
     std::cout << "jump diffusion as model pricing" << std::endl;
@@ -447,19 +447,19 @@ void vanillaMain4()
 
 void exercise11()
 {
-    //Exercise 4.1
+    // Exercise 4.1
     std::cout << "Testing if new is slow is irrelevant by now." << std::endl;
 }
 
 void exercise12()
 {
-    //Exercise 4.2
+    // Exercise 4.2
     std::cout << "auto_ptr is now deprecated, it is an example of smart pointer." << std::endl;
 }
 
 void exercise13()
 {
-    //Exercise 4.3
+    // Exercise 4.3
     std::cout << "Testing PieceWise paramters" << std::endl;
     std::vector<double> values = {1, 2};
     std::vector<double> times = {0, 3, 5};
@@ -558,6 +558,43 @@ void statsMain2()
     return;
 }
 
+void randomMain3()
+{
+    double spot(100.), expiry(1.), r(0.03), vol(0.02), strike(90.);
+    unsigned long N = 30000;
+
+    double result(0);
+
+    PayoffCall3 thePayoff(strike);
+    VanillaOption3 theOption(thePayoff, expiry);
+
+    double resultCall(0), resultPut(0);
+    ParametersConstant volParam(vol);
+    ParametersConstant rParam(r);
+
+    StatisticsMean gatherer;
+    ConvergenceTable gathererTwo(gatherer);
+    RandomParkMiller generator(1);
+    AntiThetic genTwo(generator);
+
+    simpleMonteCarlo6(theOption, spot, volParam, rParam, N, gathererTwo, genTwo);
+
+    std::vector<std::vector<double>> results = gathererTwo.getResultsSoFar();
+
+    std::cout << "For the call price the results are :" << std::endl;
+
+    for (unsigned long i = 0; i < results.size(); i++)
+    {
+        for (unsigned long j = 0; j < results[i].size(); j++)
+        {
+            std::cout << results[i][j] << " ";
+        }
+        std::cout << std::endl;
+    }
+
+    return;
+}
+
 int main()
 {
     // std::cout << "======Chapter 1======" << std::endl;
@@ -590,9 +627,12 @@ int main()
     // exercise12();
     // exercise13();
 
-    std::cout << "======Chapter 5======" << std::endl;
-    statsMain1();
+    // std::cout << "======Chapter 5======" << std::endl;
+    // statsMain1();
     statsMain2();
+
+    std::cout << "======Chapter 6======" << std::endl;
+    randomMain3();
 
     return 0;
 }
