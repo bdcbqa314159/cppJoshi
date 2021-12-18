@@ -35,6 +35,8 @@ set(SOURCE_FILES
     ${PROJECT_INCLUDE_DIR}/antiThetic.hpp
     ${PROJECT_INCLUDE_DIR}/pathDependent.hpp
     ${PROJECT_INCLUDE_DIR}/exoticEngine.hpp
+    ${PROJECT_INCLUDE_DIR}/exoticBSEngine.hpp
+    ${PROJECT_INCLUDE_DIR}/pathDependentAsian.hpp
     
 
     ${PROJECT_SOURCE_DIR}/random.cpp
@@ -53,6 +55,8 @@ set(SOURCE_FILES
     ${PROJECT_SOURCE_DIR}/antiThetic.cpp
     ${PROJECT_SOURCE_DIR}/pathDependent.cpp
     ${PROJECT_SOURCE_DIR}/exoticEngine.cpp
+    ${PROJECT_SOURCE_DIR}/exoticBSEngine.cpp
+    ${PROJECT_SOURCE_DIR}/pathDependentAsian.cpp
     
     
 )

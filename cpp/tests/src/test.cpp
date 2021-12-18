@@ -595,6 +595,54 @@ void randomMain3()
     return;
 }
 
+void equityFXMain()
+{
+    double spot(100.), expiry(1.), r(0.03), d(0.01), vol(0.02), strike(90.);
+    unsigned long numberOfPaths = 4000;
+    unsigned long numberOfDates = 10;
+
+    double result(0);
+
+    PayoffCall3 thePayoff(strike);
+    Array times(numberOfDates);
+
+    for (unsigned long i{}; i < numberOfDates; i++)
+    {
+        times[i] = (i + 1.) * expiry / numberOfDates;
+    }
+
+    double resultCall(0), resultPut(0);
+    ParametersConstant volParam(vol);
+    ParametersConstant rParam(r);
+    ParametersConstant dParam(d);
+
+    PathDependentAsian theOption(times, expiry, thePayoff);
+
+    StatisticsMean gatherer;
+    ConvergenceTable gathererTwo(gatherer);
+    RandomParkMiller generator(numberOfDates);
+    AntiThetic genTwo(generator);
+
+    ExoticBSEngine theEngine(theOption, rParam, dParam, volParam, genTwo, spot);
+
+    theEngine.doSimulation(gathererTwo, numberOfPaths);
+
+    std::vector<std::vector<double>> results = gathererTwo.getResultsSoFar();
+
+    std::cout << "For the call price the results are :" << std::endl;
+
+    for (unsigned long i = 0; i < results.size(); i++)
+    {
+        for (unsigned long j = 0; j < results[i].size(); j++)
+        {
+            std::cout << results[i][j] << " ";
+        }
+        std::cout << std::endl;
+    }
+
+    return;
+}
+
 int main()
 {
     // std::cout << "======Chapter 1======" << std::endl;
@@ -629,10 +677,12 @@ int main()
 
     // std::cout << "======Chapter 5======" << std::endl;
     // statsMain1();
-    statsMain2();
+    // statsMain2();
 
-    std::cout << "======Chapter 6======" << std::endl;
-    randomMain3();
+    // std::cout << "======Chapter 6======" << std::endl;
+    // randomMain3();
+    std::cout << "======Chapter 7======" << std::endl;
+    equityFXMain();
 
     return 0;
 }

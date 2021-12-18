@@ -270,6 +270,30 @@ src/doubleDigital.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/doubleDigital.cpp.s
 .PHONY : src/doubleDigital.cpp.s
 
+src/exoticBSEngine.o: src/exoticBSEngine.cpp.o
+.PHONY : src/exoticBSEngine.o
+
+# target to build an object file
+src/exoticBSEngine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/exoticBSEngine.cpp.o
+.PHONY : src/exoticBSEngine.cpp.o
+
+src/exoticBSEngine.i: src/exoticBSEngine.cpp.i
+.PHONY : src/exoticBSEngine.i
+
+# target to preprocess a source file
+src/exoticBSEngine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/exoticBSEngine.cpp.i
+.PHONY : src/exoticBSEngine.cpp.i
+
+src/exoticBSEngine.s: src/exoticBSEngine.cpp.s
+.PHONY : src/exoticBSEngine.s
+
+# target to generate assembly for a file
+src/exoticBSEngine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/exoticBSEngine.cpp.s
+.PHONY : src/exoticBSEngine.cpp.s
+
 src/exoticEngine.o: src/exoticEngine.cpp.o
 .PHONY : src/exoticEngine.o
 
@@ -413,6 +437,30 @@ src/pathDependent.s: src/pathDependent.cpp.s
 src/pathDependent.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/pathDependent.cpp.s
 .PHONY : src/pathDependent.cpp.s
+
+src/pathDependentAsian.o: src/pathDependentAsian.cpp.o
+.PHONY : src/pathDependentAsian.o
+
+# target to build an object file
+src/pathDependentAsian.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/pathDependentAsian.cpp.o
+.PHONY : src/pathDependentAsian.cpp.o
+
+src/pathDependentAsian.i: src/pathDependentAsian.cpp.i
+.PHONY : src/pathDependentAsian.i
+
+# target to preprocess a source file
+src/pathDependentAsian.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/pathDependentAsian.cpp.i
+.PHONY : src/pathDependentAsian.cpp.i
+
+src/pathDependentAsian.s: src/pathDependentAsian.cpp.s
+.PHONY : src/pathDependentAsian.s
+
+# target to generate assembly for a file
+src/pathDependentAsian.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/pathDependentAsian.cpp.s
+.PHONY : src/pathDependentAsian.cpp.s
 
 src/payoff.o: src/payoff.cpp.o
 .PHONY : src/payoff.o
@@ -583,6 +631,9 @@ help:
 	@echo "... src/doubleDigital.o"
 	@echo "... src/doubleDigital.i"
 	@echo "... src/doubleDigital.s"
+	@echo "... src/exoticBSEngine.o"
+	@echo "... src/exoticBSEngine.i"
+	@echo "... src/exoticBSEngine.s"
 	@echo "... src/exoticEngine.o"
 	@echo "... src/exoticEngine.i"
 	@echo "... src/exoticEngine.s"
@@ -601,6 +652,9 @@ help:
 	@echo "... src/pathDependent.o"
 	@echo "... src/pathDependent.i"
 	@echo "... src/pathDependent.s"
+	@echo "... src/pathDependentAsian.o"
+	@echo "... src/pathDependentAsian.i"
+	@echo "... src/pathDependentAsian.s"
 	@echo "... src/payoff.o"
 	@echo "... src/payoff.i"
 	@echo "... src/payoff.s"

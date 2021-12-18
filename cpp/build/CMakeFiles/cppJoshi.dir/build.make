@@ -293,6 +293,34 @@ CMakeFiles/cppJoshi.dir/src/exoticEngine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cppJoshi.dir/src/exoticEngine.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bernardocohen/repos/cppJoshi/cpp/src/exoticEngine.cpp -o CMakeFiles/cppJoshi.dir/src/exoticEngine.cpp.s
 
+CMakeFiles/cppJoshi.dir/src/exoticBSEngine.cpp.o: CMakeFiles/cppJoshi.dir/flags.make
+CMakeFiles/cppJoshi.dir/src/exoticBSEngine.cpp.o: ../src/exoticBSEngine.cpp
+CMakeFiles/cppJoshi.dir/src/exoticBSEngine.cpp.o: CMakeFiles/cppJoshi.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bernardocohen/repos/cppJoshi/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/cppJoshi.dir/src/exoticBSEngine.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cppJoshi.dir/src/exoticBSEngine.cpp.o -MF CMakeFiles/cppJoshi.dir/src/exoticBSEngine.cpp.o.d -o CMakeFiles/cppJoshi.dir/src/exoticBSEngine.cpp.o -c /Users/bernardocohen/repos/cppJoshi/cpp/src/exoticBSEngine.cpp
+
+CMakeFiles/cppJoshi.dir/src/exoticBSEngine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cppJoshi.dir/src/exoticBSEngine.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bernardocohen/repos/cppJoshi/cpp/src/exoticBSEngine.cpp > CMakeFiles/cppJoshi.dir/src/exoticBSEngine.cpp.i
+
+CMakeFiles/cppJoshi.dir/src/exoticBSEngine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cppJoshi.dir/src/exoticBSEngine.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bernardocohen/repos/cppJoshi/cpp/src/exoticBSEngine.cpp -o CMakeFiles/cppJoshi.dir/src/exoticBSEngine.cpp.s
+
+CMakeFiles/cppJoshi.dir/src/pathDependentAsian.cpp.o: CMakeFiles/cppJoshi.dir/flags.make
+CMakeFiles/cppJoshi.dir/src/pathDependentAsian.cpp.o: ../src/pathDependentAsian.cpp
+CMakeFiles/cppJoshi.dir/src/pathDependentAsian.cpp.o: CMakeFiles/cppJoshi.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bernardocohen/repos/cppJoshi/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/cppJoshi.dir/src/pathDependentAsian.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cppJoshi.dir/src/pathDependentAsian.cpp.o -MF CMakeFiles/cppJoshi.dir/src/pathDependentAsian.cpp.o.d -o CMakeFiles/cppJoshi.dir/src/pathDependentAsian.cpp.o -c /Users/bernardocohen/repos/cppJoshi/cpp/src/pathDependentAsian.cpp
+
+CMakeFiles/cppJoshi.dir/src/pathDependentAsian.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cppJoshi.dir/src/pathDependentAsian.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bernardocohen/repos/cppJoshi/cpp/src/pathDependentAsian.cpp > CMakeFiles/cppJoshi.dir/src/pathDependentAsian.cpp.i
+
+CMakeFiles/cppJoshi.dir/src/pathDependentAsian.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cppJoshi.dir/src/pathDependentAsian.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bernardocohen/repos/cppJoshi/cpp/src/pathDependentAsian.cpp -o CMakeFiles/cppJoshi.dir/src/pathDependentAsian.cpp.s
+
 # Object files for target cppJoshi
 cppJoshi_OBJECTS = \
 "CMakeFiles/cppJoshi.dir/src/random.cpp.o" \
@@ -310,7 +338,9 @@ cppJoshi_OBJECTS = \
 "CMakeFiles/cppJoshi.dir/src/parkMiller.cpp.o" \
 "CMakeFiles/cppJoshi.dir/src/antiThetic.cpp.o" \
 "CMakeFiles/cppJoshi.dir/src/pathDependent.cpp.o" \
-"CMakeFiles/cppJoshi.dir/src/exoticEngine.cpp.o"
+"CMakeFiles/cppJoshi.dir/src/exoticEngine.cpp.o" \
+"CMakeFiles/cppJoshi.dir/src/exoticBSEngine.cpp.o" \
+"CMakeFiles/cppJoshi.dir/src/pathDependentAsian.cpp.o"
 
 # External object files for target cppJoshi
 cppJoshi_EXTERNAL_OBJECTS =
@@ -331,9 +361,11 @@ libcppJoshi.dylib: CMakeFiles/cppJoshi.dir/src/parkMiller.cpp.o
 libcppJoshi.dylib: CMakeFiles/cppJoshi.dir/src/antiThetic.cpp.o
 libcppJoshi.dylib: CMakeFiles/cppJoshi.dir/src/pathDependent.cpp.o
 libcppJoshi.dylib: CMakeFiles/cppJoshi.dir/src/exoticEngine.cpp.o
+libcppJoshi.dylib: CMakeFiles/cppJoshi.dir/src/exoticBSEngine.cpp.o
+libcppJoshi.dylib: CMakeFiles/cppJoshi.dir/src/pathDependentAsian.cpp.o
 libcppJoshi.dylib: CMakeFiles/cppJoshi.dir/build.make
 libcppJoshi.dylib: CMakeFiles/cppJoshi.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bernardocohen/repos/cppJoshi/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX shared library libcppJoshi.dylib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bernardocohen/repos/cppJoshi/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX shared library libcppJoshi.dylib"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cppJoshi.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
