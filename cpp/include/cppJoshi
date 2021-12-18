@@ -24,5 +24,7 @@
 #include "cppJoshi_bits/treeAmerican.hpp"
 #include "cppJoshi_bits/treeEuropean.hpp"
 #include "cppJoshi_bits/binomialTree.hpp"
+#include "cppJoshi_bits/blackScholesFormulas.hpp"
+#include "cppJoshi_bits/forward.hpp"
 
 #endif

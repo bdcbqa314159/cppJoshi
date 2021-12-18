@@ -72,7 +72,7 @@ double cumulativeNormal(double x)
 
     double result;
 
-    if (x < 7.)
+    if (x < -7.)
     {
         result = normalDensity(x) / sqrt(1. + x * x);
     }

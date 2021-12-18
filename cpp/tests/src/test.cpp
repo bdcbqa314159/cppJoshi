@@ -1,6 +1,7 @@
 #include <cppJoshi>
 #include <iostream>
 #include <string>
+#include <cmath>
 
 void simpleMCMain1()
 {
@@ -643,6 +644,63 @@ void equityFXMain()
     return;
 }
 
+void treeMain()
+{
+
+    double spot(200.), expiry(1.), r(0.04), d(0.01), vol(0.02), strike(130.);
+    unsigned long steps = 20;
+
+    PayoffCall3 thePayoff(strike);
+
+    double resultCall(0), resultPut(0);
+    ParametersConstant rParam(r);
+    ParametersConstant dParam(d);
+
+    TreeEuropean europeanOption(expiry, thePayoff);
+    TreeAmerican americanOption(expiry, thePayoff);
+
+    SimpleBinomialTree theTree(spot, rParam, dParam, vol, steps, expiry);
+
+    double euroPrice = theTree.getThePrice(europeanOption);
+    double americanPrice = theTree.getThePrice(americanOption);
+
+    std::cout << "euro price = " << euroPrice << std::endl;
+    std::cout << "american price = " << americanPrice << std::endl;
+
+    double bsPrice = blackScholesCall(spot, strike, r, d, vol, expiry);
+    std::cout << "BS formula euro price =" << bsPrice << std::endl;
+
+    PayoffForward forwardPayoff(strike);
+    TreeEuropean forward(expiry, forwardPayoff);
+
+    double forwardPrice = theTree.getThePrice(forward);
+    std::cout << "forward price by tree: " << forwardPrice << std::endl;
+
+    double actualForwardPrice = exp(-r * expiry) * (spot * exp((r - d) * expiry) - strike);
+    std::cout << "forward price: " << actualForwardPrice << std::endl;
+
+    steps++;
+    SimpleBinomialTree theNewTree(spot, rParam, dParam, vol, steps, expiry);
+    double euroNewPrice = theNewTree.getThePrice(europeanOption);
+    double americanNewPrice = theNewTree.getThePrice(americanOption);
+
+    std::cout << "new euro price : " << euroNewPrice << std::endl;
+    std::cout << "new american price: " << americanNewPrice << std::endl;
+
+    double forwardNewPrice = theNewTree.getThePrice(forward);
+    std::cout << "forward price by new tree: " << forwardNewPrice << std::endl;
+
+    double averageEuro = 0.5 * (euroNewPrice + euroPrice);
+    double averageAmerican = 0.5 * (americanPrice + americanNewPrice);
+    double averageForward = 0.5 * (forwardNewPrice + forwardPrice);
+
+    std::cout << "euro average = " << averageEuro << std::endl;
+    std::cout << "forward average = " << averageForward << std::endl;
+    std::cout << "american average = " << averageAmerican << std::endl;
+
+    return;
+}
+
 int main()
 {
     // std::cout << "======Chapter 1======" << std::endl;
@@ -681,8 +739,11 @@ int main()
 
     // std::cout << "======Chapter 6======" << std::endl;
     // randomMain3();
-    std::cout << "======Chapter 7======" << std::endl;
-    equityFXMain();
+    // std::cout << "======Chapter 7======" << std::endl;
+    // equityFXMain();
+
+    std::cout << "======Chapter 8======" << std::endl;
+    treeMain();
 
     return 0;
 }

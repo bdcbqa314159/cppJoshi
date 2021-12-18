@@ -246,6 +246,30 @@ src/binomialTree.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/binomialTree.cpp.s
 .PHONY : src/binomialTree.cpp.s
 
+src/blackScholesFormulas.o: src/blackScholesFormulas.cpp.o
+.PHONY : src/blackScholesFormulas.o
+
+# target to build an object file
+src/blackScholesFormulas.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/blackScholesFormulas.cpp.o
+.PHONY : src/blackScholesFormulas.cpp.o
+
+src/blackScholesFormulas.i: src/blackScholesFormulas.cpp.i
+.PHONY : src/blackScholesFormulas.i
+
+# target to preprocess a source file
+src/blackScholesFormulas.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/blackScholesFormulas.cpp.i
+.PHONY : src/blackScholesFormulas.cpp.i
+
+src/blackScholesFormulas.s: src/blackScholesFormulas.cpp.s
+.PHONY : src/blackScholesFormulas.s
+
+# target to generate assembly for a file
+src/blackScholesFormulas.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/blackScholesFormulas.cpp.s
+.PHONY : src/blackScholesFormulas.cpp.s
+
 src/convergenceTable.o: src/convergenceTable.cpp.o
 .PHONY : src/convergenceTable.o
 
@@ -341,6 +365,30 @@ src/exoticEngine.s: src/exoticEngine.cpp.s
 src/exoticEngine.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/exoticEngine.cpp.s
 .PHONY : src/exoticEngine.cpp.s
+
+src/forward.o: src/forward.cpp.o
+.PHONY : src/forward.o
+
+# target to build an object file
+src/forward.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/forward.cpp.o
+.PHONY : src/forward.cpp.o
+
+src/forward.i: src/forward.cpp.i
+.PHONY : src/forward.i
+
+# target to preprocess a source file
+src/forward.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/forward.cpp.i
+.PHONY : src/forward.cpp.i
+
+src/forward.s: src/forward.cpp.s
+.PHONY : src/forward.s
+
+# target to generate assembly for a file
+src/forward.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/forward.cpp.s
+.PHONY : src/forward.cpp.s
 
 src/mcStatistics.o: src/mcStatistics.cpp.o
 .PHONY : src/mcStatistics.o
@@ -606,6 +654,54 @@ src/simpleMC.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/simpleMC.cpp.s
 .PHONY : src/simpleMC.cpp.s
 
+src/treeAmerican.o: src/treeAmerican.cpp.o
+.PHONY : src/treeAmerican.o
+
+# target to build an object file
+src/treeAmerican.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/treeAmerican.cpp.o
+.PHONY : src/treeAmerican.cpp.o
+
+src/treeAmerican.i: src/treeAmerican.cpp.i
+.PHONY : src/treeAmerican.i
+
+# target to preprocess a source file
+src/treeAmerican.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/treeAmerican.cpp.i
+.PHONY : src/treeAmerican.cpp.i
+
+src/treeAmerican.s: src/treeAmerican.cpp.s
+.PHONY : src/treeAmerican.s
+
+# target to generate assembly for a file
+src/treeAmerican.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/treeAmerican.cpp.s
+.PHONY : src/treeAmerican.cpp.s
+
+src/treeEuropean.o: src/treeEuropean.cpp.o
+.PHONY : src/treeEuropean.o
+
+# target to build an object file
+src/treeEuropean.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/treeEuropean.cpp.o
+.PHONY : src/treeEuropean.cpp.o
+
+src/treeEuropean.i: src/treeEuropean.cpp.i
+.PHONY : src/treeEuropean.i
+
+# target to preprocess a source file
+src/treeEuropean.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/treeEuropean.cpp.i
+.PHONY : src/treeEuropean.cpp.i
+
+src/treeEuropean.s: src/treeEuropean.cpp.s
+.PHONY : src/treeEuropean.s
+
+# target to generate assembly for a file
+src/treeEuropean.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/treeEuropean.cpp.s
+.PHONY : src/treeEuropean.cpp.s
+
 src/treeProducts.o: src/treeProducts.cpp.o
 .PHONY : src/treeProducts.o
 
@@ -676,6 +772,9 @@ help:
 	@echo "... src/binomialTree.o"
 	@echo "... src/binomialTree.i"
 	@echo "... src/binomialTree.s"
+	@echo "... src/blackScholesFormulas.o"
+	@echo "... src/blackScholesFormulas.i"
+	@echo "... src/blackScholesFormulas.s"
 	@echo "... src/convergenceTable.o"
 	@echo "... src/convergenceTable.i"
 	@echo "... src/convergenceTable.s"
@@ -688,6 +787,9 @@ help:
 	@echo "... src/exoticEngine.o"
 	@echo "... src/exoticEngine.i"
 	@echo "... src/exoticEngine.s"
+	@echo "... src/forward.o"
+	@echo "... src/forward.i"
+	@echo "... src/forward.s"
 	@echo "... src/mcStatistics.o"
 	@echo "... src/mcStatistics.i"
 	@echo "... src/mcStatistics.s"
@@ -721,6 +823,12 @@ help:
 	@echo "... src/simpleMC.o"
 	@echo "... src/simpleMC.i"
 	@echo "... src/simpleMC.s"
+	@echo "... src/treeAmerican.o"
+	@echo "... src/treeAmerican.i"
+	@echo "... src/treeAmerican.s"
+	@echo "... src/treeEuropean.o"
+	@echo "... src/treeEuropean.i"
+	@echo "... src/treeEuropean.s"
 	@echo "... src/treeProducts.o"
 	@echo "... src/treeProducts.i"
 	@echo "... src/treeProducts.s"

@@ -6,6 +6,7 @@
 /usr/local/include/cppJoshi_bits/mcStatistics.hpp
 /usr/local/include/cppJoshi_bits/treeProducts.hpp
 /usr/local/include/cppJoshi_bits/.DS_Store
+/usr/local/include/cppJoshi_bits/blackScholesFormulas.hpp
 /usr/local/include/cppJoshi_bits/normals.hpp
 /usr/local/include/cppJoshi_bits/antiThetic.hpp
 /usr/local/include/cppJoshi_bits/arrays.hpp
@@ -14,6 +15,7 @@
 /usr/local/include/cppJoshi_bits/treeEuropean.hpp
 /usr/local/include/cppJoshi_bits/doubleDigital.hpp
 /usr/local/include/cppJoshi_bits/payoff.hpp
+/usr/local/include/cppJoshi_bits/forward.hpp
 /usr/local/include/cppJoshi_bits/random.hpp
 /usr/local/include/cppJoshi_bits/powerOptions.hpp
 /usr/local/include/cppJoshi_bits/exoticEngine.hpp
