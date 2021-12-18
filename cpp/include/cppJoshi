@@ -20,5 +20,6 @@
 #include "cppJoshi_bits/exoticEngine.hpp"
 #include "cppJoshi_bits/exoticBSEngine.hpp"
 #include "cppJoshi_bits/pathDependentAsian.hpp"
+#include "cppJoshi_bits/treeProducts.hpp"
 
 #endif

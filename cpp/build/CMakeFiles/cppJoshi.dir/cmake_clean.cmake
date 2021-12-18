@@ -33,6 +33,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/cppJoshi.dir/src/random.cpp.o.d"
   "CMakeFiles/cppJoshi.dir/src/simpleMC.cpp.o"
   "CMakeFiles/cppJoshi.dir/src/simpleMC.cpp.o.d"
+  "CMakeFiles/cppJoshi.dir/src/treeProducts.cpp.o"
+  "CMakeFiles/cppJoshi.dir/src/treeProducts.cpp.o.d"
   "CMakeFiles/cppJoshi.dir/src/vanilla.cpp.o"
   "CMakeFiles/cppJoshi.dir/src/vanilla.cpp.o.d"
   "libcppJoshi.dylib"

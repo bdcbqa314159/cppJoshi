@@ -2309,6 +2309,10 @@ CMakeFiles/cppJoshi.dir/src/simpleMC.cpp.o
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/__bsd_locale_defaults.h
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/bitset
 
+CMakeFiles/cppJoshi.dir/src/treeProducts.cpp.o
+ /Users/bernardocohen/repos/cppJoshi/cpp/src/treeProducts.cpp
+ /Users/bernardocohen/repos/cppJoshi/cpp/include/cppJoshi_bits/treeProducts.hpp
+
 CMakeFiles/cppJoshi.dir/src/vanilla.cpp.o
  /Users/bernardocohen/repos/cppJoshi/cpp/src/vanilla.cpp
  /Users/bernardocohen/repos/cppJoshi/cpp/include/cppJoshi_bits/vanilla.hpp

@@ -582,6 +582,30 @@ src/simpleMC.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/simpleMC.cpp.s
 .PHONY : src/simpleMC.cpp.s
 
+src/treeProducts.o: src/treeProducts.cpp.o
+.PHONY : src/treeProducts.o
+
+# target to build an object file
+src/treeProducts.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/treeProducts.cpp.o
+.PHONY : src/treeProducts.cpp.o
+
+src/treeProducts.i: src/treeProducts.cpp.i
+.PHONY : src/treeProducts.i
+
+# target to preprocess a source file
+src/treeProducts.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/treeProducts.cpp.i
+.PHONY : src/treeProducts.cpp.i
+
+src/treeProducts.s: src/treeProducts.cpp.s
+.PHONY : src/treeProducts.s
+
+# target to generate assembly for a file
+src/treeProducts.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/treeProducts.cpp.s
+.PHONY : src/treeProducts.cpp.s
+
 src/vanilla.o: src/vanilla.cpp.o
 .PHONY : src/vanilla.o
 
@@ -670,6 +694,9 @@ help:
 	@echo "... src/simpleMC.o"
 	@echo "... src/simpleMC.i"
 	@echo "... src/simpleMC.s"
+	@echo "... src/treeProducts.o"
+	@echo "... src/treeProducts.i"
+	@echo "... src/treeProducts.s"
 	@echo "... src/vanilla.o"
 	@echo "... src/vanilla.i"
 	@echo "... src/vanilla.s"

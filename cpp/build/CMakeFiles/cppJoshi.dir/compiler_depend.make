@@ -2292,6 +2292,9 @@ CMakeFiles/cppJoshi.dir/src/simpleMC.cpp.o: ../src/simpleMC.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/bitset
 
+CMakeFiles/cppJoshi.dir/src/treeProducts.cpp.o: ../src/treeProducts.cpp \
+  ../include/cppJoshi_bits/treeProducts.hpp
+
 CMakeFiles/cppJoshi.dir/src/vanilla.cpp.o: ../src/vanilla.cpp \
   ../include/cppJoshi_bits/vanilla.hpp \
   ../include/cppJoshi_bits/payoff.hpp \
@@ -2321,6 +2324,8 @@ CMakeFiles/cppJoshi.dir/src/vanilla.cpp.o: ../src/vanilla.cpp \
 ../include/cppJoshi_bits/parkMiller.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/sys/_types/_fsblkcnt_t.h:
+
+../src/treeProducts.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/sys/_types/_fd_copy.h:
 
@@ -2639,6 +2644,8 @@ CMakeFiles/cppJoshi.dir/src/vanilla.cpp.o: ../src/vanilla.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/sys/stdio.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/stdio.h:
+
+../include/cppJoshi_bits/treeProducts.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/sys/_types/_id_t.h:
 
