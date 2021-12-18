@@ -38,6 +38,7 @@ set(SOURCE_FILES
     ${PROJECT_INCLUDE_DIR}/exoticBSEngine.hpp
     ${PROJECT_INCLUDE_DIR}/pathDependentAsian.hpp
     ${PROJECT_INCLUDE_DIR}/treeProducts.hpp
+    ${PROJECT_INCLUDE_DIR}/binomialTree.hpp
     
 
     ${PROJECT_SOURCE_DIR}/random.cpp
@@ -59,6 +60,7 @@ set(SOURCE_FILES
     ${PROJECT_SOURCE_DIR}/exoticBSEngine.cpp
     ${PROJECT_SOURCE_DIR}/pathDependentAsian.cpp
     ${PROJECT_SOURCE_DIR}/treeProducts.cpp
+    ${PROJECT_SOURCE_DIR}/binomialTree.cpp
     
     
 )

@@ -222,6 +222,30 @@ src/arrays.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/arrays.cpp.s
 .PHONY : src/arrays.cpp.s
 
+src/binomialTree.o: src/binomialTree.cpp.o
+.PHONY : src/binomialTree.o
+
+# target to build an object file
+src/binomialTree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/binomialTree.cpp.o
+.PHONY : src/binomialTree.cpp.o
+
+src/binomialTree.i: src/binomialTree.cpp.i
+.PHONY : src/binomialTree.i
+
+# target to preprocess a source file
+src/binomialTree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/binomialTree.cpp.i
+.PHONY : src/binomialTree.cpp.i
+
+src/binomialTree.s: src/binomialTree.cpp.s
+.PHONY : src/binomialTree.s
+
+# target to generate assembly for a file
+src/binomialTree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/binomialTree.cpp.s
+.PHONY : src/binomialTree.cpp.s
+
 src/convergenceTable.o: src/convergenceTable.cpp.o
 .PHONY : src/convergenceTable.o
 
@@ -649,6 +673,9 @@ help:
 	@echo "... src/arrays.o"
 	@echo "... src/arrays.i"
 	@echo "... src/arrays.s"
+	@echo "... src/binomialTree.o"
+	@echo "... src/binomialTree.i"
+	@echo "... src/binomialTree.s"
 	@echo "... src/convergenceTable.o"
 	@echo "... src/convergenceTable.i"
 	@echo "... src/convergenceTable.s"

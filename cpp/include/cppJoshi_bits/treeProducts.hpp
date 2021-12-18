@@ -5,8 +5,8 @@ class TreeProduct
 {
 public:
     TreeProduct(double FinalTime);
-    virtual double FinalPayoff(double spot) const = 0;
-    virtual double PreFinalValue(double spot, double time, double discountedFutureValue) const = 0;
+    virtual double finalPayoff(double spot) const = 0;
+    virtual double preFinalValue(double spot, double time, double discountedFutureValue) const = 0;
 
     virtual ~TreeProduct() {}
     virtual TreeProduct *clone() const = 0;

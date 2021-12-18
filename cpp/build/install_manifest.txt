@@ -11,6 +11,7 @@
 /usr/local/include/cppJoshi_bits/arrays.hpp
 /usr/local/include/cppJoshi_bits/pathDependentAsian.hpp
 /usr/local/include/cppJoshi_bits/pathDependent.hpp
+/usr/local/include/cppJoshi_bits/treeEuropean.hpp
 /usr/local/include/cppJoshi_bits/doubleDigital.hpp
 /usr/local/include/cppJoshi_bits/payoff.hpp
 /usr/local/include/cppJoshi_bits/random.hpp
@@ -21,3 +22,5 @@
 /usr/local/include/cppJoshi_bits/wrapper.hpp
 /usr/local/include/cppJoshi_bits/simpleMC.hpp
 /usr/local/include/cppJoshi_bits/exoticBSEngine.hpp
+/usr/local/include/cppJoshi_bits/binomialTree.hpp
+/usr/local/include/cppJoshi_bits/treeAmerican.hpp

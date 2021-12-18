@@ -21,5 +21,8 @@
 #include "cppJoshi_bits/exoticBSEngine.hpp"
 #include "cppJoshi_bits/pathDependentAsian.hpp"
 #include "cppJoshi_bits/treeProducts.hpp"
+#include "cppJoshi_bits/treeAmerican.hpp"
+#include "cppJoshi_bits/treeEuropean.hpp"
+#include "cppJoshi_bits/binomialTree.hpp"
 
 #endif

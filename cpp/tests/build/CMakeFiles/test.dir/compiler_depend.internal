@@ -182,6 +182,9 @@ CMakeFiles/test.dir/src/test.cpp.o
  /usr/local/include/cppJoshi_bits/exoticEngine.hpp
  /usr/local/include/cppJoshi_bits/exoticBSEngine.hpp
  /usr/local/include/cppJoshi_bits/pathDependentAsian.hpp
+ /usr/local/include/cppJoshi_bits/treeProducts.hpp
+ /usr/local/include/cppJoshi_bits/treeAmerican.hpp
+ /usr/local/include/cppJoshi_bits/treeEuropean.hpp
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/iostream
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/ios
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/__locale
