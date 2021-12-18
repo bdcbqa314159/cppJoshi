@@ -16,5 +16,7 @@
 #include "cppJoshi_bits/arrays.hpp"
 #include "cppJoshi_bits/parkMiller.hpp"
 #include "cppJoshi_bits/antiThetic.hpp"
+#include "cppJoshi_bits/pathDependent.hpp"
+#include "cppJoshi_bits/exoticEngine.hpp"
 
 #endif

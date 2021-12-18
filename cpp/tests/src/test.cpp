@@ -561,7 +561,7 @@ void statsMain2()
 void randomMain3()
 {
     double spot(100.), expiry(1.), r(0.03), vol(0.02), strike(90.);
-    unsigned long N = 30000;
+    unsigned long N = 400000;
 
     double result(0);
 
@@ -577,9 +577,9 @@ void randomMain3()
     RandomParkMiller generator(1);
     AntiThetic genTwo(generator);
 
-    simpleMonteCarlo6(theOption, spot, volParam, rParam, N, gathererTwo, genTwo);
+    simpleMonteCarlo6(theOption, spot, volParam, rParam, N, gatherer, generator);
 
-    std::vector<std::vector<double>> results = gathererTwo.getResultsSoFar();
+    std::vector<std::vector<double>> results = gatherer.getResultsSoFar();
 
     std::cout << "For the call price the results are :" << std::endl;
 

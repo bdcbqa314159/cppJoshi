@@ -270,6 +270,30 @@ src/doubleDigital.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/doubleDigital.cpp.s
 .PHONY : src/doubleDigital.cpp.s
 
+src/exoticEngine.o: src/exoticEngine.cpp.o
+.PHONY : src/exoticEngine.o
+
+# target to build an object file
+src/exoticEngine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/exoticEngine.cpp.o
+.PHONY : src/exoticEngine.cpp.o
+
+src/exoticEngine.i: src/exoticEngine.cpp.i
+.PHONY : src/exoticEngine.i
+
+# target to preprocess a source file
+src/exoticEngine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/exoticEngine.cpp.i
+.PHONY : src/exoticEngine.cpp.i
+
+src/exoticEngine.s: src/exoticEngine.cpp.s
+.PHONY : src/exoticEngine.s
+
+# target to generate assembly for a file
+src/exoticEngine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/exoticEngine.cpp.s
+.PHONY : src/exoticEngine.cpp.s
+
 src/mcStatistics.o: src/mcStatistics.cpp.o
 .PHONY : src/mcStatistics.o
 
@@ -365,6 +389,30 @@ src/parkMiller.s: src/parkMiller.cpp.s
 src/parkMiller.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/parkMiller.cpp.s
 .PHONY : src/parkMiller.cpp.s
+
+src/pathDependent.o: src/pathDependent.cpp.o
+.PHONY : src/pathDependent.o
+
+# target to build an object file
+src/pathDependent.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/pathDependent.cpp.o
+.PHONY : src/pathDependent.cpp.o
+
+src/pathDependent.i: src/pathDependent.cpp.i
+.PHONY : src/pathDependent.i
+
+# target to preprocess a source file
+src/pathDependent.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/pathDependent.cpp.i
+.PHONY : src/pathDependent.cpp.i
+
+src/pathDependent.s: src/pathDependent.cpp.s
+.PHONY : src/pathDependent.s
+
+# target to generate assembly for a file
+src/pathDependent.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/pathDependent.cpp.s
+.PHONY : src/pathDependent.cpp.s
 
 src/payoff.o: src/payoff.cpp.o
 .PHONY : src/payoff.o
@@ -535,6 +583,9 @@ help:
 	@echo "... src/doubleDigital.o"
 	@echo "... src/doubleDigital.i"
 	@echo "... src/doubleDigital.s"
+	@echo "... src/exoticEngine.o"
+	@echo "... src/exoticEngine.i"
+	@echo "... src/exoticEngine.s"
 	@echo "... src/mcStatistics.o"
 	@echo "... src/mcStatistics.i"
 	@echo "... src/mcStatistics.s"
@@ -547,6 +598,9 @@ help:
 	@echo "... src/parkMiller.o"
 	@echo "... src/parkMiller.i"
 	@echo "... src/parkMiller.s"
+	@echo "... src/pathDependent.o"
+	@echo "... src/pathDependent.i"
+	@echo "... src/pathDependent.s"
 	@echo "... src/payoff.o"
 	@echo "... src/payoff.i"
 	@echo "... src/payoff.s"

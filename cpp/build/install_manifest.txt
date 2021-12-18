@@ -8,10 +8,12 @@
 /usr/local/include/cppJoshi_bits/normals.hpp
 /usr/local/include/cppJoshi_bits/antiThetic.hpp
 /usr/local/include/cppJoshi_bits/arrays.hpp
+/usr/local/include/cppJoshi_bits/pathDependent.hpp
 /usr/local/include/cppJoshi_bits/doubleDigital.hpp
 /usr/local/include/cppJoshi_bits/payoff.hpp
 /usr/local/include/cppJoshi_bits/random.hpp
 /usr/local/include/cppJoshi_bits/powerOptions.hpp
+/usr/local/include/cppJoshi_bits/exoticEngine.hpp
 /usr/local/include/cppJoshi_bits/parameters.hpp
 /usr/local/include/cppJoshi_bits/convergenceTable.hpp
 /usr/local/include/cppJoshi_bits/wrapper.hpp
