@@ -717,6 +717,22 @@ void solveMain1()
     std::cout << "vol = " << vol << "  price two " << priceTwo << std::endl;
 }
 
+void solveMain2()
+{
+
+    double spot(200.), expiry(1.), r(0.04), d(0.01), strike(130.);
+    double price(74.3702);
+
+    double start = 0.3;
+    double tolerance = 0.0001;
+
+    BSCall2 theCall(r, d, expiry, spot, strike);
+    double vol = newtonRaphson<BSCall2, &BSCall2::price, &BSCall2::vega>(price, start, tolerance, theCall);
+    double priceTwo = blackScholesCall(spot, strike, r, d, 0.3, expiry);
+
+    std::cout << "vol = " << vol << "  price two " << priceTwo << std::endl;
+}
+
 int main()
 {
     // std::cout << "======Chapter 1======" << std::endl;
@@ -763,6 +779,7 @@ int main()
 
     std::cout << "======Chapter 9======" << std::endl;
     solveMain1();
+    solveMain2();
 
     return 0;
 }

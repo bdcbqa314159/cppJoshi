@@ -45,6 +45,7 @@ set(SOURCE_FILES
     ${PROJECT_INCLUDE_DIR}/forward.hpp
     ${PROJECT_INCLUDE_DIR}/bsCall.hpp
     ${PROJECT_INCLUDE_DIR}/bisection.hpp
+    ${PROJECT_INCLUDE_DIR}/newtonRaphson.hpp
 
     ${PROJECT_SOURCE_DIR}/random.cpp
     ${PROJECT_SOURCE_DIR}/simpleMC.cpp

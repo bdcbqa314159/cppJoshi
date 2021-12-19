@@ -3,6 +3,7 @@
 /usr/local/include/cppJoshi_bits/payoffBridge.hpp
 /usr/local/include/cppJoshi_bits/vanilla.hpp
 /usr/local/include/cppJoshi_bits/parkMiller.hpp
+/usr/local/include/cppJoshi_bits/newtonRaphson.hpp
 /usr/local/include/cppJoshi_bits/mcStatistics.hpp
 /usr/local/include/cppJoshi_bits/bisection.hpp
 /usr/local/include/cppJoshi_bits/treeProducts.hpp

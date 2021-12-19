@@ -28,5 +28,6 @@
 #include "cppJoshi_bits/forward.hpp"
 #include "cppJoshi_bits/bsCall.hpp"
 #include "cppJoshi_bits/bisection.hpp"
+#include "cppJoshi_bits/newtonRaphson.hpp"
 
 #endif
