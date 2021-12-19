@@ -733,6 +733,22 @@ void solveMain2()
     std::cout << "vol = " << vol << "  price two " << priceTwo << std::endl;
 }
 
+void payoffFactoryMain()
+{
+
+    double strike(120.);
+    std::string name("call");
+
+    Payoff3 *payoffPtr = PayoffFactory::instance().createPayoff(name, strike);
+
+    if (payoffPtr != NULL)
+    {
+        double spot(300);
+        std::cout << payoffPtr->operator()(spot) << std::endl;
+        delete payoffPtr;
+    }
+}
+
 int main()
 {
     // std::cout << "======Chapter 1======" << std::endl;
@@ -777,9 +793,12 @@ int main()
     // std::cout << "======Chapter 8======" << std::endl;
     // treeMain();
 
-    std::cout << "======Chapter 9======" << std::endl;
-    solveMain1();
-    solveMain2();
+    // std::cout << "======Chapter 9======" << std::endl;
+    // solveMain1();
+    // solveMain2();
+
+    std::cout << "======Chapter 10======" << std::endl;
+    payoffFactoryMain();
 
     return 0;
 }

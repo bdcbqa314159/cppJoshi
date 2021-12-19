@@ -419,6 +419,34 @@ CMakeFiles/cppJoshi.dir/src/bsCall.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cppJoshi.dir/src/bsCall.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bernardocohen/repos/cppJoshi/cpp/src/bsCall.cpp -o CMakeFiles/cppJoshi.dir/src/bsCall.cpp.s
 
+CMakeFiles/cppJoshi.dir/src/payoffFactory.cpp.o: CMakeFiles/cppJoshi.dir/flags.make
+CMakeFiles/cppJoshi.dir/src/payoffFactory.cpp.o: ../src/payoffFactory.cpp
+CMakeFiles/cppJoshi.dir/src/payoffFactory.cpp.o: CMakeFiles/cppJoshi.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bernardocohen/repos/cppJoshi/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/cppJoshi.dir/src/payoffFactory.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cppJoshi.dir/src/payoffFactory.cpp.o -MF CMakeFiles/cppJoshi.dir/src/payoffFactory.cpp.o.d -o CMakeFiles/cppJoshi.dir/src/payoffFactory.cpp.o -c /Users/bernardocohen/repos/cppJoshi/cpp/src/payoffFactory.cpp
+
+CMakeFiles/cppJoshi.dir/src/payoffFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cppJoshi.dir/src/payoffFactory.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bernardocohen/repos/cppJoshi/cpp/src/payoffFactory.cpp > CMakeFiles/cppJoshi.dir/src/payoffFactory.cpp.i
+
+CMakeFiles/cppJoshi.dir/src/payoffFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cppJoshi.dir/src/payoffFactory.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bernardocohen/repos/cppJoshi/cpp/src/payoffFactory.cpp -o CMakeFiles/cppJoshi.dir/src/payoffFactory.cpp.s
+
+CMakeFiles/cppJoshi.dir/src/payoffRegistration.cpp.o: CMakeFiles/cppJoshi.dir/flags.make
+CMakeFiles/cppJoshi.dir/src/payoffRegistration.cpp.o: ../src/payoffRegistration.cpp
+CMakeFiles/cppJoshi.dir/src/payoffRegistration.cpp.o: CMakeFiles/cppJoshi.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bernardocohen/repos/cppJoshi/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/cppJoshi.dir/src/payoffRegistration.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cppJoshi.dir/src/payoffRegistration.cpp.o -MF CMakeFiles/cppJoshi.dir/src/payoffRegistration.cpp.o.d -o CMakeFiles/cppJoshi.dir/src/payoffRegistration.cpp.o -c /Users/bernardocohen/repos/cppJoshi/cpp/src/payoffRegistration.cpp
+
+CMakeFiles/cppJoshi.dir/src/payoffRegistration.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cppJoshi.dir/src/payoffRegistration.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bernardocohen/repos/cppJoshi/cpp/src/payoffRegistration.cpp > CMakeFiles/cppJoshi.dir/src/payoffRegistration.cpp.i
+
+CMakeFiles/cppJoshi.dir/src/payoffRegistration.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cppJoshi.dir/src/payoffRegistration.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bernardocohen/repos/cppJoshi/cpp/src/payoffRegistration.cpp -o CMakeFiles/cppJoshi.dir/src/payoffRegistration.cpp.s
+
 # Object files for target cppJoshi
 cppJoshi_OBJECTS = \
 "CMakeFiles/cppJoshi.dir/src/random.cpp.o" \
@@ -445,7 +473,9 @@ cppJoshi_OBJECTS = \
 "CMakeFiles/cppJoshi.dir/src/binomialTree.cpp.o" \
 "CMakeFiles/cppJoshi.dir/src/blackScholesFormulas.cpp.o" \
 "CMakeFiles/cppJoshi.dir/src/forward.cpp.o" \
-"CMakeFiles/cppJoshi.dir/src/bsCall.cpp.o"
+"CMakeFiles/cppJoshi.dir/src/bsCall.cpp.o" \
+"CMakeFiles/cppJoshi.dir/src/payoffFactory.cpp.o" \
+"CMakeFiles/cppJoshi.dir/src/payoffRegistration.cpp.o"
 
 # External object files for target cppJoshi
 cppJoshi_EXTERNAL_OBJECTS =
@@ -475,9 +505,11 @@ libcppJoshi.dylib: CMakeFiles/cppJoshi.dir/src/binomialTree.cpp.o
 libcppJoshi.dylib: CMakeFiles/cppJoshi.dir/src/blackScholesFormulas.cpp.o
 libcppJoshi.dylib: CMakeFiles/cppJoshi.dir/src/forward.cpp.o
 libcppJoshi.dylib: CMakeFiles/cppJoshi.dir/src/bsCall.cpp.o
+libcppJoshi.dylib: CMakeFiles/cppJoshi.dir/src/payoffFactory.cpp.o
+libcppJoshi.dylib: CMakeFiles/cppJoshi.dir/src/payoffRegistration.cpp.o
 libcppJoshi.dylib: CMakeFiles/cppJoshi.dir/build.make
 libcppJoshi.dylib: CMakeFiles/cppJoshi.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bernardocohen/repos/cppJoshi/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX shared library libcppJoshi.dylib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bernardocohen/repos/cppJoshi/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Linking CXX shared library libcppJoshi.dylib"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cppJoshi.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

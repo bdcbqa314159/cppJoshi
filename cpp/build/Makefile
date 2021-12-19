@@ -606,6 +606,54 @@ src/payoffBridge.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/payoffBridge.cpp.s
 .PHONY : src/payoffBridge.cpp.s
 
+src/payoffFactory.o: src/payoffFactory.cpp.o
+.PHONY : src/payoffFactory.o
+
+# target to build an object file
+src/payoffFactory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/payoffFactory.cpp.o
+.PHONY : src/payoffFactory.cpp.o
+
+src/payoffFactory.i: src/payoffFactory.cpp.i
+.PHONY : src/payoffFactory.i
+
+# target to preprocess a source file
+src/payoffFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/payoffFactory.cpp.i
+.PHONY : src/payoffFactory.cpp.i
+
+src/payoffFactory.s: src/payoffFactory.cpp.s
+.PHONY : src/payoffFactory.s
+
+# target to generate assembly for a file
+src/payoffFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/payoffFactory.cpp.s
+.PHONY : src/payoffFactory.cpp.s
+
+src/payoffRegistration.o: src/payoffRegistration.cpp.o
+.PHONY : src/payoffRegistration.o
+
+# target to build an object file
+src/payoffRegistration.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/payoffRegistration.cpp.o
+.PHONY : src/payoffRegistration.cpp.o
+
+src/payoffRegistration.i: src/payoffRegistration.cpp.i
+.PHONY : src/payoffRegistration.i
+
+# target to preprocess a source file
+src/payoffRegistration.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/payoffRegistration.cpp.i
+.PHONY : src/payoffRegistration.cpp.i
+
+src/payoffRegistration.s: src/payoffRegistration.cpp.s
+.PHONY : src/payoffRegistration.s
+
+# target to generate assembly for a file
+src/payoffRegistration.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cppJoshi.dir/build.make CMakeFiles/cppJoshi.dir/src/payoffRegistration.cpp.s
+.PHONY : src/payoffRegistration.cpp.s
+
 src/powerOptions.o: src/powerOptions.cpp.o
 .PHONY : src/powerOptions.o
 
@@ -841,6 +889,12 @@ help:
 	@echo "... src/payoffBridge.o"
 	@echo "... src/payoffBridge.i"
 	@echo "... src/payoffBridge.s"
+	@echo "... src/payoffFactory.o"
+	@echo "... src/payoffFactory.i"
+	@echo "... src/payoffFactory.s"
+	@echo "... src/payoffRegistration.o"
+	@echo "... src/payoffRegistration.i"
+	@echo "... src/payoffRegistration.s"
 	@echo "... src/powerOptions.o"
 	@echo "... src/powerOptions.i"
 	@echo "... src/powerOptions.s"
