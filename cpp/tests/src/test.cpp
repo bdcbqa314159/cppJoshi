@@ -701,6 +701,22 @@ void treeMain()
     return;
 }
 
+void solveMain1()
+{
+
+    double spot(200.), expiry(1.), r(0.04), d(0.01), strike(130.);
+    double price(73.1073);
+
+    double low = 0.01, high = 1;
+    double tolerance = 0.001;
+
+    BSCall1 theCall(r, d, expiry, spot, strike);
+    double vol = bisection(price, low, high, tolerance, theCall);
+    double priceTwo = blackScholesCall(spot, strike, r, d, vol, expiry);
+
+    std::cout << "vol = " << vol << "  price two " << priceTwo << std::endl;
+}
+
 int main()
 {
     // std::cout << "======Chapter 1======" << std::endl;
@@ -742,8 +758,11 @@ int main()
     // std::cout << "======Chapter 7======" << std::endl;
     // equityFXMain();
 
-    std::cout << "======Chapter 8======" << std::endl;
-    treeMain();
+    // std::cout << "======Chapter 8======" << std::endl;
+    // treeMain();
+
+    std::cout << "======Chapter 9======" << std::endl;
+    solveMain1();
 
     return 0;
 }

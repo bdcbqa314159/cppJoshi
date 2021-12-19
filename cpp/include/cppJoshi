@@ -26,5 +26,7 @@
 #include "cppJoshi_bits/binomialTree.hpp"
 #include "cppJoshi_bits/blackScholesFormulas.hpp"
 #include "cppJoshi_bits/forward.hpp"
+#include "cppJoshi_bits/bsCall.hpp"
+#include "cppJoshi_bits/bisection.hpp"
 
 #endif

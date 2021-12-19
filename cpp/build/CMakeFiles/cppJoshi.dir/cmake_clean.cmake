@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/cppJoshi.dir/src/binomialTree.cpp.o.d"
   "CMakeFiles/cppJoshi.dir/src/blackScholesFormulas.cpp.o"
   "CMakeFiles/cppJoshi.dir/src/blackScholesFormulas.cpp.o.d"
+  "CMakeFiles/cppJoshi.dir/src/bsCall.cpp.o"
+  "CMakeFiles/cppJoshi.dir/src/bsCall.cpp.o.d"
   "CMakeFiles/cppJoshi.dir/src/convergenceTable.cpp.o"
   "CMakeFiles/cppJoshi.dir/src/convergenceTable.cpp.o.d"
   "CMakeFiles/cppJoshi.dir/src/doubleDigital.cpp.o"
