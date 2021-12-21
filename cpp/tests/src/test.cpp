@@ -749,6 +749,30 @@ void payoffFactoryMain()
     }
 }
 
+void wrapperMain()
+{
+    double S(200.), K1(90.), K2(301.), K3(120.);
+
+    PayoffCall3 one(K1);
+    PayoffPut3 two(K2);
+
+    std::cout << "one : " << one(S) << std::endl;
+
+    Payoff3 *p = one.clone();
+    Wrapper1<Payoff3> four = p;
+
+    {
+        Payoff3 *q = two.clone();
+        Wrapper1<Payoff3> five = q;
+
+        std::cout << "four : " << (*four)(S) << std::endl;
+        std::cout << "five : " << (*five)(S) << std::endl;
+
+        four = five;
+    }
+    std::cout << "four : " << (*four)(S) << std::endl;
+}
+
 int main()
 {
     // std::cout << "======Chapter 1======" << std::endl;
@@ -797,8 +821,11 @@ int main()
     // solveMain1();
     // solveMain2();
 
-    std::cout << "======Chapter 10======" << std::endl;
-    payoffFactoryMain();
+    // std::cout << "======Chapter 10======" << std::endl;
+    // payoffFactoryMain();
+
+    std::cout << "======Chapter 13======" << std::endl;
+    wrapperMain();
 
     return 0;
 }
